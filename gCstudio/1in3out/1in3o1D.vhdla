@@ -1,0 +1,60 @@
+library VLSI;
+use VLSI.SI.all;
+entity 3outBank is port (
+	terminal output VoL : electrical;
+	terminal output VoC : electrical;
+	terminal output VoH : electrical;
+	terminal input Vin : electrical;
+	terminal ground gnd: electrical);
+end entity 3outBank;
+architecture bank_arch of 3outBank is
+variable v1,v2,v3,v4,v5,v6,v7 : real;
+
+begin
+--- output elements
+-- LP output
+G1 : GC_CON port map (Ni=>v7, Nj=>gnd, Vo=>VoL);
+C1 : GC_CAP generic map(dim=>1) port map (Ni=>v7, Nj=>gnd);
+ig1 : GC_GYR port map( Ni=>v4, Nj=>v7);
+-- CP output
+G2 : GC_CON port map (Ni=>v6, Nj=>gnd, Vo=>VoC);
+C2 : GC_CAP generic map(dim=>1) port map (Ni=>v6, Nj=>gnd);
+ig2 : GC_GYR port map( Ni=>v4, Nj=>v6);
+-- HP output
+G3 : GC_CON port map (Ni=>v5, Nj=>gnd, Vo=>VoH);
+ig3 : GC_GYR port map( Ni=>v4, Nj=>v5);
+--- chain elements
+ig4 : GC_GYR port map( Ni=>v1, Nj=>v2);
+C4 : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>gnd);
+ig5 : GC_GYR port map( Ni=>v2, Nj=>v3);
+C5 : GC_CAP generic map(dim=>1) port map (Ni=>v3, Nj=>gnd);
+ig6 : GC_GYR port map( Ni=>v3, Nj=>v4);
+C6 : GC_CAP generic map(dim=>1) port map (Ni=>v4, Nj=>gnd);
+--ig7 : GC_GYR port map( Ni=>v1, Nj=>v3);
+--ig8 : GC_GYR port map( Ni=>v1, Nj=>v4);
+--ig9 : GC_GYR port map( Ni=>v2, Nj=>v4);
+-- input node
+G4 : GC_CON port map (Ni=>Vin, Nj=>v1);
+--- additional capacitors
+---C7 : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>v4);
+---C8 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v4);
+---C8 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v3);
+--- gyrators from chain nodes to outputs
+-- LP output
+ig11 : GC_GYR port map( Ni=>v1, Nj=>v7);
+ig12 : GC_GYR port map( Ni=>v2, Nj=>v7);
+ig13 : GC_GYR port map( Ni=>v3, Nj=>v7);
+-- CP output
+ig21 : GC_GYR port map( Ni=>v1, Nj=>v6);
+ig22 : GC_GYR port map( Ni=>v2, Nj=>v6);
+ig23 : GC_GYR port map( Ni=>v3, Nj=>v6);
+-- HP output
+ig31 : GC_GYR port map( Ni=>v1, Nj=>v5);
+ig32 : GC_GYR port map( Ni=>v2, Nj=>v5);
+ig33 : GC_GYR port map( Ni=>v3, Nj=>v5);
+--- gyrators betwen outputs
+---ig41 : GC_GYR port map( Ni=>v7, Nj=>v6);
+---ig42 : GC_GYR port map( Ni=>v7, Nj=>v5);
+---ig43 : GC_GYR port map( Ni=>v5, Nj=>v6);
+
+end architecture;

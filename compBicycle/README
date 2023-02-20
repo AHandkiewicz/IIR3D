@@ -1,0 +1,22 @@
+{Com2D}    -- removes even rows and columns in the ideal sequence,
+{DeComCol} -- creates the extended sequence in Step 2 of the algorithm,
+{DeComRow} -- creates the extended sequence in Step 4 of the algorithm.
+
+
+1. {Com2D}    function removes the even columns and rows in every frame of gbicycle.avi (576x720x30), producing the initial video comBic2.avi (288x360x30),
+
+2. {videoCap} function captures, from comBic2.avi, tIij blocks, where i=1,...,23, j=1,...,29, and number 23*29 of blocks: (288-2*2)/12=23.667, (360-2*2)/12=29.667,
+
+3. filtering tIij blocks with {Fi2}, in the library {Filter} produces the intermediate pixel blocks tOutij, for i, j as in p.2,
+
+4. resulting tOutij blocks are integrated, similarly to tIij, with the function {videoInt} into a sequence of intermediate pixels inCom1H4.avi (276x348x16), for i, j as in p.2,
+
+5. the {DeComCol} function creates the column-extended sequence DeComH4c.avi (276x696x16), taking successive columns from inCom1.avi as odd columns and from inCom1H4.avi as even columns,
+
+6. {videoCap} captures, from DeComH4c.avi, blocks tIij, i=1,...,22, j=1,...,57, integrated by {videoInt} into the video inCom2.avi (264x684x16), where i and j are calculated as (276-2*2)/12=22.667, (696-2*2)/12=57.667,
+
+7. tIij blocks are processed by {Fi2} filter, for i, j as in p.6,
+
+8. resulting blocks of subpixels tOutij are integrated by {videoInt} into the video inCom2H4.avi (264x684x16), for i, j as in p.6,
+
+9. the {DeComRow} function creates the row-extended video DeComH4r.avi (528x684x16), taking the odd rows from inCom2.avi and the even rows from inCom2H4.avi.

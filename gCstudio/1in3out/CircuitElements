@@ -1,0 +1,39 @@
+
+
+Structure Number calculated for the circuit:
+Ci	C1	 alias x1:	 sign=1 7	 0	dim=1 
+Ci	C2	 alias x2:	 sign=1 6	 0	dim=1 
+Ci	C4	 alias x3:	 sign=1 2	 0	dim=1 
+Ci	C5	 alias x4:	 sign=1 3	 0	dim=1 
+Ci	C6	 alias x5:	 sign=1 4	 0	dim=1 
+Ig	ig1	 alias x6:	 sign=1 4	 7	
+Ig	ig2	 alias x7:	 sign=1 4	 6	
+Ig	ig3	 alias x8:	 sign=1 4	 5	
+Ig	ig4	 alias x9:	 sign=1 1	 2	
+Ig	ig5	 alias x10:	 sign=1 2	 3	
+Ig	ig6	 alias x11:	 sign=1 3	 4	
+Ig	ig11	 alias x12:	 sign=1 1	 7	
+Ig	ig12	 alias x13:	 sign=1 2	 7	
+Ig	ig13	 alias x14:	 sign=1 3	 7	
+Ig	ig21	 alias x15:	 sign=1 1	 6	
+Ig	ig22	 alias x16:	 sign=1 2	 6	
+Ig	ig23	 alias x17:	 sign=1 3	 6	
+Ig	ig31	 alias x18:	 sign=1 1	 5	
+Ig	ig32	 alias x19:	 sign=1 2	 5	
+Ig	ig33	 alias x20:	 sign=1 3	 5	
+Gj2	G1	 alias x21:	 sign=1 7	 0		signal=VoL
+Gj2	G2	 alias x22:	 sign=1 6	 0		signal=VoC
+Gj2	G3	 alias x23:	 sign=1 5	 0		signal=VoH
+Gi1	G4	 alias x24:	 sign=1 0	 1		signal=Vin
+Analysing admittance matrix:		DONE
+Calculating determinant:		DONE
+Analysing signal path from Vin to VoL:	DONE
+Calculating determinant:		DONE
+Analysing signal path from Vin to VoC:	DONE
+Calculating determinant:		DONE
+Analysing signal path from Vin to VoH:	DONE
+Calculating determinant:		DONE
+Finished in 0 second(s).
+
+Results were saved as: 1in3o1D.v.sn 
+Finished in 0 seconds

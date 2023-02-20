@@ -1,0 +1,19 @@
+
+
+Structure Number calculated for the circuit:
+Ci	C1	 alias x1:	 sign=1 1	 0	dim=1 
+Ci	C	 alias x2:	 sign=1 2	 0	dim=1 
+Ci	C3	 alias x3:	 sign=1 3	 0	dim=1 
+Cf	C2	 alias x4:	 sign=1 1	 3	dim=1 
+Ig	ig1	 alias x5:	 sign=1 1	 2	
+Ig	ig2	 alias x6:	 sign=1 2	 3	
+Gi1	Gi	 alias x7:	 sign=1 0	 1		signal=Vin
+Gj2	Go	 alias x8:	 sign=1 3	 0		signal=Vout
+Analysing admittance matrix:		DONE
+Calculating determinant:		DONE
+Analysing signal path from Vin to Vout:	DONE
+Calculating determinant:		DONE
+Finished in 0 second(s).
+
+Results were saved as: 3ellip1D.v.sn 
+Finished in 0 seconds

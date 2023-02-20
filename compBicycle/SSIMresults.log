@@ -1,0 +1,10 @@
+>> SSIMuse
+Index SSIM for videoRO.avi and videoRO.avi results 1, ideal=1.
+S =  1.0000
+Index SSIM for videoRO.avi and videoRE.avi results 0.93225, ideal=1.
+S =  0.93225
+Index SSIM for videoRO.avi and DeComH6r.avi results 0.92331, ideal=1.
+S =  0.92331
+Index SSIM for videoRO.avi and DeComH4r.avi results 0.92801, ideal=1.
+S =  0.92801
+>>

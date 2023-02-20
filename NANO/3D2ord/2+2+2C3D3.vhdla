@@ -1,0 +1,30 @@
+library VLSI;
+use VLSI.SI.all;
+entity example is port (
+	terminal output Vout : electrical;
+	terminal input Vin : electrical;
+	terminal ground gnd: electrical);
+end entity example;
+-- some comment line
+architecture example_arch of example is
+variable v1,v2,v3 : real;
+begin
+-- capacitors
+C11 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v2);
+C12 : GC_CAP generic map(dim=>2) port map (Ni=>v1, Nj=>v2);
+C13 : GC_CAP generic map(dim=>3) port map (Ni=>v1, Nj=>v2);
+C21 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v3);
+C22 : GC_CAP generic map(dim=>2) port map (Ni=>v1, Nj=>v3);
+C23 : GC_CAP generic map(dim=>3) port map (Ni=>v1, Nj=>v3);
+C31 : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>v3);
+C32 : GC_CAP generic map(dim=>2) port map (Ni=>v2, Nj=>v3);
+C33 : GC_CAP generic map(dim=>3) port map (Ni=>v2, Nj=>v3);
+-- conductances with I/O signals
+G1 : GC_CON port map (Ni=>v1, Nj=>gnd, Vo=>Vout);
+G2 : GC_CON port map (Ni=>Vin, Nj=>v3);
+-- gyrators
+ig1 : GC_GYR port map( Ni=>v2, Nj=>v1);
+ig2 : GC_GYR port map( Ni=>v3, Nj=>v2);
+ig7 : GC_GYR port map( Ni=>v3, Nj=>v1);
+
+end architecture;

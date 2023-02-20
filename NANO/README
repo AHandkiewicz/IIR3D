@@ -1,0 +1,29 @@
+Compilation can be made after placing the script {makefile} into the directory created by the user. Thanks to the script, the compilation in the Linux operating system is automatically made by the instruction {make all} invoked in the created directory, in subsequent compilations preceded by the instruction {make clean}.
+---------------
+The created program {optimizer} can be used with the following options:
+
+{-r} -- optimization with respect to the parameters of the gC multiport circuit in the range of real numbers without constraints,
+
+{-x} -- optimization with respect to the parameters of the gC multiport circuit in the range of real numbers with constraints,
+
+{-c 1} -- storing the results in memory (1 means no storing),
+
+{-a} -- design with a specific type of analysis: in the analogue domain for the parameter s or, after the bilinear transformation, in the complex domain for the parameter z and in the discrete time domain for the parameters t or m,
+
+{-n} -- generating random variables, in a given range (option {-x}) or without constraints,
+
+{-i} -- number of iterations performed during optimization,
+
+{-t} -- the initial value of the variable step (tau) at the start of the algorithm,
+
+{-d} -- number of samples in discrete time for particular dimensions of the gC circuit. Discrete time can also be interpreted as a row or a column number, or a frame number in a video.
+--------------
+The type of analysis in complex domains or in the discrete-time domain is implemented for the synthesized gC multiport circuit by specifying the appropriate parameter for the option {-a}:
+
+{-a s} -- analysis in s domain; it is assumed that the files s0, s1, ... that correspond to the given transfer functions, are placed in the working directory: s0 is the file of the transfer function denominator coefficients, s1, s2, ... are the files of the transfer function numerator coefficients,
+
+{-a z} -- analysis in z domain; it is assumed that the files z0, z1, ... that correspond to the given transfer functions, are placed in the working directory: z0 is the file of the transfer function denominator coefficients, z1, z2, ... are the files of the transfer function numerator coefficients,
+
+{-a t} -- discrete-time analysis t; it is assumed that the files t0, t1, t2, ... that correspond to the samples on the all input ports (t0) or on the output ports 1, 2, ..., respectively, are given,
+
+{-a m} -- discrete-time analysis with optimization for input samples included into the given file t0 and for the response samples included into the given file t1.

@@ -1,0 +1,39 @@
+library VLSI;
+use VLSI.SI.all;
+entity example is port (
+	terminal input Vin : electrical;
+	terminal output VoutL : electrical;
+	terminal output VoutH : electrical;
+	terminal ground gnd: electrical);
+end entity example;
+-- some comment line
+architecture example_arch of example is
+variable v1,v2,v3,v4,v5,v6,v7 : real;
+begin
+-- capacitors with different dimensions
+C1 : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>gnd);
+C2 : GC_CAP generic map(dim=>1) port map (Ni=>v6, Nj=>gnd);
+C3 : GC_CAP generic map(dim=>1) port map (Ni=>v3, Nj=>gnd);
+C4 : GC_CAP generic map(dim=>1) port map (Ni=>v4, Nj=>gnd);
+C5 : GC_CAP generic map(dim=>1) port map (Ni=>v5, Nj=>gnd);
+-- conductances with I/O signals
+G1 : GC_CON port map (Ni=>Vin, Nj=>v1);
+G2 : GC_CON port map (Ni=>v6, Nj=>gnd, Vo=>VoutL);
+G4 : GC_CON port map (Ni=>v7, Nj=>gnd, Vo=>VoutH);
+-- gyrators
+ig1 : GC_GYR port map( Ni=>v1, Nj=>v2);
+ig2 : GC_GYR port map( Ni=>v1, Nj=>v6);
+ig3 : GC_GYR port map( Ni=>v1, Nj=>v7);
+ig4 : GC_GYR port map( Ni=>v2, Nj=>v3);
+ig5 : GC_GYR port map( Ni=>v3, Nj=>v4);
+ig6 : GC_GYR port map( Ni=>v4, Nj=>v5);
+ig7 : GC_GYR port map( Ni=>v2, Nj=>v6);
+ig8 : GC_GYR port map( Ni=>v2, Nj=>v7);
+ig9 : GC_GYR port map( Ni=>v3, Nj=>v6);
+-- ig10 : GC_GYR port map( Ni=>v3, Nj=>v7);
+-- ig11 : GC_GYR port map( Ni=>v4, Nj=>v6);
+-- ig12 : GC_GYR port map( Ni=>v4, Nj=>v7);
+ig10 : GC_GYR port map( Ni=>v5, Nj=>v6);
+-- ig12 : GC_GYR port map( Ni=>v5, Nj=>v7);
+
+end architecture;

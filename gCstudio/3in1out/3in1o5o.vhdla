@@ -1,0 +1,61 @@
+library VLSI;
+use VLSI.SI.all;
+entity 3inBank is port (
+	terminal input VinL : electrical;
+	terminal input VinC : electrical;
+	terminal input VinH : electrical;
+	terminal output Vout : electrical;
+	terminal ground gnd: electrical);
+end entity 3inBank;
+architecture bank_arch of 3inBank is
+variable v1,v2,v3,v4,v5,v6,v7 : real;
+
+begin
+--- input elements
+-- LP input
+G1 : GC_CON port map (Ni=>VinL, Nj=>v1);
+C1 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v4);
+ig1 : GC_GYR port map( Ni=>v1, Nj=>v4);
+-- CP input
+G2 : GC_CON port map (Ni=>VinC, Nj=>v2);
+C2 : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>v4);
+ig2 : GC_GYR port map( Ni=>v2, Nj=>v4);
+-- HP input
+G3 : GC_CON port map (Ni=>VinH, Nj=>v3);
+ig3 : GC_GYR port map( Ni=>v3, Nj=>v4);
+--C3 : GC_CAP generic map(dim=>1) port map (Ni=>v3, Nj=>v4);
+--- chain elements
+ig4 : GC_GYR port map( Ni=>v4, Nj=>v5);
+C4 : GC_CAP generic map(dim=>1) port map (Ni=>v4, Nj=>v5);
+ig5 : GC_GYR port map( Ni=>v5, Nj=>v6);
+C5 : GC_CAP generic map(dim=>1) port map (Ni=>v5, Nj=>v6);
+ig6 : GC_GYR port map( Ni=>v6, Nj=>v7);
+C6 : GC_CAP generic map(dim=>1) port map (Ni=>v6, Nj=>v7);
+ig7 : GC_GYR port map( Ni=>v4, Nj=>v7);
+ig8 : GC_GYR port map( Ni=>v5, Nj=>v7);
+ig9 : GC_GYR port map( Ni=>v4, Nj=>v6);
+-- output node
+G4 : GC_CON port map (Ni=>v7, Nj=>gnd, Vo=>Vout);
+--- additional capacitors
+C7 : GC_CAP generic map(dim=>1) port map (Ni=>v4, Nj=>v6);
+---C8 : GC_CAP generic map(dim=>1) port map (Ni=>v4, Nj=>v7);
+C8 : GC_CAP generic map(dim=>1) port map (Ni=>v5, Nj=>v7);
+--- gyrators from inputs to chain nodes
+-- LP input
+---ig11 : GC_GYR port map( Ni=>v1, Nj=>v5);
+---ig12 : GC_GYR port map( Ni=>v1, Nj=>v6);
+---ig13 : GC_GYR port map( Ni=>v1, Nj=>v7);
+-- CP input
+---ig21 : GC_GYR port map( Ni=>v2, Nj=>v5);
+---ig22 : GC_GYR port map( Ni=>v2, Nj=>v6);
+---ig23 : GC_GYR port map( Ni=>v2, Nj=>v7);
+-- HP input
+---ig31 : GC_GYR port map( Ni=>v3, Nj=>v5);
+---ig32 : GC_GYR port map( Ni=>v3, Nj=>v6);
+---ig33 : GC_GYR port map( Ni=>v3, Nj=>v7);
+--- gyrators betwen inputs
+ig41 : GC_GYR port map( Ni=>v1, Nj=>v2);
+ig42 : GC_GYR port map( Ni=>v1, Nj=>v3);
+ig43 : GC_GYR port map( Ni=>v2, Nj=>v3);
+
+end architecture;

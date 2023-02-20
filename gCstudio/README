@@ -1,0 +1,10 @@
+Compilation
+-----------
+Installing \textbf{gCstudio} on a Linux operating system is as follows:
+1. create a shared directory and move the source subdirectories {lib} and {src} to it,
+2. create a subdirectory {bin} in the shared directory,
+3. enter the directory {src}: cd src,
+4. copy makefile_unix : cp makefile_unix makefile,
+5. execute the \{make clean} command - the *.o files in the {src} directory are deleted (this is not necessary for the first compilation),
+6. execute the command {make all} - the automatic compilation described in the file {makefile} is executed,
+7.run gc_analyser in the {bin} subdirectory: ./gc_analyser or, after copying, in any other directory with examples. After starting the program, follow the displayed instructions.
