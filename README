@@ -1,7 +1,9 @@
 The repository contains source and compiled files presented in the book:
       Methods and tools for computer-aided design of multidimensional filters in signal processing, //www.vitalsource.com/en-uk
-in the paper:
+in the papers:
       Cariow A., Naumowicz M., Handkiewicz A., Structure and Principles of Operation of a Quaternion
       VLSI Multiplier, Appl. Sci. 2024, 14(18), 8123; https://doi.org/10.3390/app14188123
+      A. Handkiewicz, G. Krzywoszyja, W. Zajac, M. Naumowicz, Filter design based on multi-port and multi-dimensional gC circuit, 
+      Circuits, Systems, and Signal Processing, https://doi.org/10.1007/s00034-025-03004-0
 and in the paper to be published:
-      Filter design based on multi-port and multi-dimensional gC circuit
+      Current-Mode Circuit Design for NSFET Technology
