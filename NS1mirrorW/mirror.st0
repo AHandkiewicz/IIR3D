@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+Input File: mirror.sp
+lic:
+lic: FLEXlm: SDK_12.9.6
+lic: USER:   wa                   HOSTNAME: wa-Komputer
+lic: HOSTID: 080027e71bd6         PID:      2320
+lic: Using FLEXlm license file:
+lic: 27000@127.0.0.1
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@127.0.0.1
+lic:
+
+ init: begin read circuit files, cpu clock= 1.21E-01
+       option search = C:/synopsys/Hspice_S-2021.09/parts/behave/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/AD/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/XILINX/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/SIGNET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PCI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/DI0/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/COMLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BJT/
+       option list
+       option node
+       option post
+ init: end read circuit files, cpu clock= 8.96E+00 peak memory=      82 mb
+ init: begin check errors, cpu clock= 8.96E+00
+ init: end check errors, cpu clock= 9.03E+00 peak memory=      83 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 9.03E+00
+       establish matrix -- done, cpu clock= 9.03E+00 peak memory=      83 mb
+       re-order matrix -- done, cpu clock= 9.04E+00 peak memory=      83 mb
+ init: end setup matrix, cpu clock= 9.04E+00 peak memory=      84 mb
+ dcop: begin dcop, cpu clock= 9.05E+00
+ dcop: end dcop, cpu clock= 9.07E+00 peak memory=      84 mb tot_iter=       7
+ output: Z:\SIdesign\NS1mirrorW\mirror.tr0
+ sweep: tran tran0    begin, stop_t=  2.00E-08 #sweeps= 201 cpu clock= 9.08E+00
+ tran: time= 2.0000E-09 tot_iter=      10 conv_iter=       5 cpu clock= 9.10E+00
+ tran: time= 4.0000E-09 tot_iter=      20 conv_iter=      10 cpu clock= 9.12E+00
+ tran: time= 6.0000E-09 tot_iter=      28 conv_iter=      14 cpu clock= 9.13E+00
+ tran: time= 8.0000E-09 tot_iter=      36 conv_iter=      18 cpu clock= 9.14E+00
+ tran: time= 1.0000E-08 tot_iter=      44 conv_iter=      22 cpu clock= 9.15E+00
+ tran: time= 1.2000E-08 tot_iter=      54 conv_iter=      27 cpu clock= 9.17E+00
+ tran: time= 1.4000E-08 tot_iter=      62 conv_iter=      31 cpu clock= 9.19E+00
+ tran: time= 1.6000E-08 tot_iter=      68 conv_iter=      34 cpu clock= 9.19E+00
+ tran: time= 1.8948E-08 tot_iter=      76 conv_iter=      38 cpu clock= 9.21E+00
+ tran: time= 2.0000E-08 tot_iter=      78 conv_iter=      39 cpu clock= 9.21E+00
+ sweep: tran tran0    end, cpu clock= 9.22E+00 peak memory=      84 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

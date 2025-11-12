@@ -1,0 +1,192 @@
+*pvaI* ### ENV(PVA_EXPLODE_GMD) is 0 ###
+
+ ---------------------------------------------------------
+|                                                         |
+|             Synopsys Unified Verilog-A (pVA)            |
+|                                                         |
+|                Machine Name: wa-Komputer                |
+| Copyright (c) 2015 Synopsys Inc., All Rights Reserved.  |
+|                                                         |
+ ---------------------------------------------------------
+
+libepva built by pvamgr synmake_pva_build  on Mon Jul 26 15:45:43 CST 2021 - p4:
+HSP_HOME:   C:\synopsys\Hspice_S-2021.09
+HSP_ARCH is not set.
+HSP_GCC :   C:\synopsys\Hspice_S-2021.09\GNU\win64\bin\gcc
+HSP_GCC_VER:   5.2.0
+Working-Dir:     Z:\SIdesign\NS1diodeW
+Args:            -p hsp -t spi -f Z:/SIdesign/NS1diodeW/diode.pvadir/pvaHDL.lis -o Z:/SIdesign/NS1diodeW/diode.pvadir 
+
+### optimize mode ###
+
+Begin of pVA compiling on Fri May 23 19:06:21 2025	
+
+Parsing 'source/bsimcmg.va'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/constants.vams'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/disciplines.vams'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/common_defs.include'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/bsimcmg_cfringe.include'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/bsimcmg_body.include'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/bsimcmg_binning_parameters.include'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/bsimcmg_rdsmod.include'
+Parsing include file 'Z:/SIdesign/NS1diodeW//source/bsimcmg_quasi_static_cv.include'
+
+End of pVA compiling on Fri May 23 19:06:21 2025	
+
+
+End of build pVA DB on Fri May 23 19:06:36 2025	
+
+
+Z:\SIdesign\NS1diodeW\diode.pvadir\pvaRTL_win64.dll is reused
+
+*pvaI* Creating VA module (bsimcmg) for instance XD0.XMN1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/synopsys/diode1//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/synopsys/diode1//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri May 23 19:06:36 2025	
+
+*pvaW* (31) FPE: Encountered numerical NaN with node (di, si) (Z:/SIdesign/NS1diodeW//source/bsimcmg_body.include:3729)
+*pvaW*           in N/A-instname(bsimcmg)
+*pvaW* (31)      For a complete list of FPE warnings, please setenv PVA_ENABLE_FPE3 2
+*pvaW* (31)      For debugging, please use $strobe to print the value of signal.
+
+*pvaI* Creating VA module (bsimcmg) for instance XD0.XMP1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/synopsys/diode1//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/synopsys/diode1//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri May 23 19:06:36 2025	
+
+*pvaI* Creating VA module (bsimcmg) for instance XINP.XMN1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/synopsys/diode1//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/synopsys/diode1//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri May 23 19:06:36 2025	
+
+*pvaI* Creating VA module (bsimcmg) for instance XINP.XMP1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/synopsys/diode1//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/synopsys/diode1//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri May 23 19:06:36 2025	
+
+End of pVA setup    on Fri May 23 19:06:36 2025	
+
+Begin of pVA simulation on Fri May 23 19:06:36 2025	
+
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306110e-01
+VTH = 3.385525e-01
+*pvaI* minimum timestep = 1e-19
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306110e-01
+VTH = 3.385525e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306110e-01
+VTH = 3.385525e-01
+VTH = -3.329900e-01
+VTH = -3.329901e-01
+VTH = 3.429747e-01
+VTH = -3.306212e-01
+VTH = 3.385335e-01
+VTH = -3.329902e-01
+VTH = 3.429743e-01
+VTH = -3.306492e-01
+VTH = 3.384808e-01
+VTH = -3.329903e-01
+VTH = 3.429736e-01
+VTH = -3.307004e-01
+VTH = 3.383846e-01
+VTH = -3.329903e-01
+VTH = 3.429735e-01
+VTH = -3.307132e-01
+VTH = 3.383605e-01
+VTH = -3.329903e-01
+VTH = 3.429735e-01
+VTH = -3.307132e-01
+VTH = 3.383605e-01
+VTH = -3.329903e-01
+VTH = 3.429735e-01
+VTH = -3.307114e-01
+VTH = 3.383640e-01
+VTH = -3.329903e-01
+VTH = 3.429736e-01
+VTH = -3.307053e-01
+VTH = 3.383754e-01
+VTH = -3.329903e-01
+VTH = 3.429738e-01
+VTH = -3.306853e-01
+VTH = 3.384131e-01
+VTH = -3.329901e-01
+VTH = 3.429745e-01
+VTH = -3.306342e-01
+VTH = 3.385091e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306111e-01
+VTH = 3.385523e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306111e-01
+VTH = 3.385524e-01
+VTH = -3.329900e-01
+VTH = 3.429752e-01
+VTH = -3.305853e-01
+VTH = 3.386006e-01
+VTH = -3.329899e-01
+VTH = 3.429757e-01
+VTH = -3.305511e-01
+VTH = 3.386647e-01
+VTH = -3.329897e-01
+VTH = 3.429763e-01
+VTH = -3.305072e-01
+VTH = 3.387464e-01
+VTH = -3.329897e-01
+VTH = 3.429763e-01
+VTH = -3.305068e-01
+VTH = 3.387473e-01
+VTH = -3.329898e-01
+VTH = 3.429759e-01
+VTH = -3.305332e-01
+VTH = 3.386980e-01
+VTH = -3.329899e-01
+VTH = 3.429755e-01
+VTH = -3.305666e-01
+VTH = 3.386356e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306115e-01
+VTH = 3.385516e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306110e-01
+VTH = 3.385525e-01
+VTH = -3.329900e-01
+VTH = 3.429749e-01
+VTH = -3.306110e-01
+VTH = 3.385525e-01
+
+End of pVA simulation reached at time 2e-08 on Fri May 23 19:06:36 2025	
+
+
+		pVA malloc          1.636 Mbytes        32482 times
+		pVA calloc         11.431 Mbytes       114773 times
+		pVA realloc        22.709 Mbytes         3599 times
+		pVA valloc          0.000 Mbytes            0 times
+		pVA alloca          0.000 Mbytes            0 times
+
+		pVA TOT-MEM        35.776 Mbytes       150854 times
+		pVA free                                26505 times
+		pVA strdup          0.000 Mbytes            0 times
+
+pVA concluded on Fri May 23 19:06:36 2025	
+

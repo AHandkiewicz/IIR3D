@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+Input File: diode.sp
+lic:
+lic: FLEXlm: SDK_12.9.6
+lic: USER:   wa                   HOSTNAME: wa-Komputer
+lic: HOSTID: 080027e71bd6         PID:      2160
+lic: Using FLEXlm license file:
+lic: 27000@127.0.0.1
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@127.0.0.1
+lic:
+
+ init: begin read circuit files, cpu clock= 9.90E-02
+       option search = C:/synopsys/Hspice_S-2021.09/parts/behave/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/AD/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/XILINX/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/SIGNET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PCI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/DI0/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/COMLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BJT/
+       option list
+       option node
+       option post
+ init: end read circuit files, cpu clock= 1.51E+01 peak memory=      89 mb
+ init: begin check errors, cpu clock= 1.51E+01
+ init: end check errors, cpu clock= 1.52E+01 peak memory=      89 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.52E+01
+       establish matrix -- done, cpu clock= 1.52E+01 peak memory=      89 mb
+       re-order matrix -- done, cpu clock= 1.52E+01 peak memory=      89 mb
+ init: end setup matrix, cpu clock= 1.52E+01 peak memory=      90 mb
+ dcop: begin dcop, cpu clock= 1.52E+01
+ dcop: end dcop, cpu clock= 1.52E+01 peak memory=      90 mb tot_iter=       6
+ output: Z:\SIdesign\NS1diodeW\diode.tr0
+ sweep: tran tran0    begin, stop_t=  2.00E-08 #sweeps= 201 cpu clock= 1.52E+01
+ tran: time= 2.0000E-09 tot_iter=      10 conv_iter=       5 cpu clock= 1.52E+01
+ tran: time= 4.0000E-09 tot_iter=      20 conv_iter=      10 cpu clock= 1.52E+01
+ tran: time= 6.0000E-09 tot_iter=      28 conv_iter=      14 cpu clock= 1.52E+01
+ tran: time= 8.0000E-09 tot_iter=      40 conv_iter=      20 cpu clock= 1.52E+01
+ tran: time= 1.0000E-08 tot_iter=      46 conv_iter=      23 cpu clock= 1.52E+01
+ tran: time= 1.2000E-08 tot_iter=      52 conv_iter=      26 cpu clock= 1.52E+01
+ tran: time= 1.4000E-08 tot_iter=      58 conv_iter=      29 cpu clock= 1.52E+01
+ tran: time= 1.6000E-08 tot_iter=      64 conv_iter=      32 cpu clock= 1.52E+01
+ tran: time= 1.8141E-08 tot_iter=      70 conv_iter=      35 cpu clock= 1.52E+01
+ tran: time= 2.0000E-08 tot_iter=      74 conv_iter=      37 cpu clock= 1.52E+01
+ sweep: tran tran0    end, cpu clock= 1.52E+01 peak memory=      90 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

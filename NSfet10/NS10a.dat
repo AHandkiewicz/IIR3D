@@ -1,0 +1,58 @@
+% Input data file for Current Mirror program
+% (transistor length are in [nm], width are in NS)
+
+% NSFETs, VA-models,  (am=0.3V)
+% - min channel length: 10nm, channel width: 3 nanosheets
+% - grid: integral multiple of 1nm
+% - current mirror composed of NSFETs with channel width 3NS
+CURRENT MIRROR MAKER - INPUT DATA FILE      
+
+% Technology grid
+GRID = 1 
+
+% NMOS transistors channel width
+NMOS_WIDTH = 1
+
+% transistor length to width (2D array), 
+% and bias current in [uA]:
+% - results from diode connection simulations
+LxW = 10
+L = 10  20  30  40  50  60  70  80  90 100
+W = 14  27  40  52  64  77  89 101 114 126
+IB = 15  10 7.8 6.4 5.4 4.6 4.1 3.7 3.3   3
+                         
+% Input/Output transistor (lin/lout) lenght
+%  to current gain (S)
+S(LINxLOUT) = 10 x 10
+LIN =  10  20  30  40  50  60  70  80  90 100
+LOUT = 10  20  30  40  50  60  70  80  90 100
+
+LIN_ARRAY = 10   
+S = 0.94263   0.71108   0.56694   0.47314   0.40525   0.35221   0.31254   0.28072   0.25374   0.23217
+
+LIN_ARRAY = 20      
+S = 1.27778   0.96462   0.76920   0.64206   0.55000   0.47800   0.42419   0.38102   0.34439   0.31513
+
+LIN_ARRAY = 30      
+S = 1.60960   1.21479   0.96870   0.80854   0.69259   0.60195   0.53417   0.47982   0.43370   0.39684
+
+LIN_ARRAY = 40    
+S = 1.92984   1.45679   1.16170   0.96967   0.83064   0.72192   0.64065   0.57545   0.52013   0.47594
+
+LIN_ARRAY = 50      
+S = 2.25309   1.70099   1.35644   1.13225   0.96993   0.84296   0.74806   0.67195   0.60734   0.55575
+
+LIN_ARRAY = 60      
+S = 2.59368   1.95751   1.56098   1.30289   1.11607   0.97001   0.86079   0.77320   0.69888   0.63950
+
+LIN_ARRAY = 70      
+S = 2.92254   2.20592   1.75908   1.46827   1.25774   1.09312   0.97005   0.87134   0.78759   0.72067
+
+LIN_ARRAY = 80      
+S = 3.25347   2.45587   1.95841   1.63468   1.40030   1.21702   1.08000   0.97010   0.87685   0.80235
+
+LIN_ARRAY = 90      
+S = 3.60079   2.71749   2.16701   1.80871   1.54935   1.34660   1.19496   1.07337   0.97020   0.88775
+
+LIN_ARRAY = 100      
+S = 3.93514   2.97005   2.36841   1.97685   1.69339   1.47177   1.30607   1.17316   1.06038   0.97028

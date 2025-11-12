@@ -1,0 +1,1252 @@
+ ****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: diode.sp                                                          
+  Command line options: C:\synopsys\Hspice_S-2021.09\WIN64\hspice.com -i diode.sp -o Z:\SIdesign\NS1diodeW\diode.lis
+  Start time: Fri May 23 19:06:21 2025
+  lic:  
+  lic: FLEXlm: SDK_12.9.6 
+  lic: USER:   wa                   HOSTNAME: wa-Komputer 
+  lic: HOSTID: 080027e71bd6         PID:      2160 
+  lic: Using FLEXlm license file: 
+  lic: 27000@127.0.0.1 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@127.0.0.1 
+  lic:   
+ scientific notation:
+ a=10**-18  f=10**-15  p=10**-12  n=10**-9  u=10**-6
+ m=10**-3   k=10**3    x=10**6    g=10**9 
+ Loading pVA library Z:\SIdesign\NS1diodeW\diode.pvadir\pvaRTL_win64.dll...
+1****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xinp.                           inv_x5             1.00 
+        2 xd0.                            d_x1               1.00 
+        3 xinp.xmp1.                      bsimcmg(va)        1.00 
+        4 xinp.xmn1.                      bsimcmg(va)        1.00 
+        5 xd0.xmp1.                       bsimcmg(va)        1.00 
+        6 xd0.xmn1.                       bsimcmg(va)        1.00 
+
+
+ circuit parameter definitions
+  parameter          =  value 
+
+     0:fp                                                      = 100.0000x      
+     0:vp                                                      = 350.0000m      
+     0:vm                                                      =-350.0000m      
+     0:k                                                       =  12.0000       
+     3:igbmod                                                  =   0.           
+     3:hfin                                                    =  15.0000n      
+     3:nseg                                                    =   5.0000       
+     3:l                                                       =  64.0000n      
+     3:capmod                                                  =   0.           
+     3:easub                                                   =   4.0500       
+     3:tfin                                                    =  24.0000n      
+     3:bulkmod                                                 =   1.0000       
+     3:coremod                                                 =   0.           
+     3:cgeomod                                                 =   2.0000       
+     3:devtype                                                 =   0.           
+     3:geomod                                                  =   2.0000       
+     3:gidlmod                                                 =   1.0000       
+     3:igcmod                                                  =   1.0000       
+     3:iimod                                                   =   0.           
+     3:ngate                                                   =   0.           
+     3:nqsmod                                                  =   0.           
+     3:rdsmod                                                  =   0.           
+     3:rgatemod                                                =   0.           
+     3:rgeomod                                                 =   0.           
+     3:sdterm                                                  =   0.           
+     3:shmod                                                   =   0.           
+     3:aigc                                                    =  14.0000m      
+     3:aigd                                                    =  11.5000m      
+     3:aigs                                                    =  11.5000m      
+     3:at                                                      =   1.0000m      
+     3:bg0sub                                                  =   1.1700       
+     3:bgidl                                                   = 100.0000x      
+     3:bgisl                                                   = 100.0000x      
+     3:bigc                                                    =   5.0000m      
+     3:bigd                                                    =   3.3200m      
+     3:bigs                                                    =   3.3200m      
+     3:cdsc                                                    =  10.0000m      
+     3:cdscd                                                   =  10.0000m      
+     3:cfd                                                     =  20.0000p      
+     3:cfs                                                     =  20.0000p      
+     3:cgbl                                                    =   0.           
+     3:cgbo                                                    =   0.           
+     3:cgdl                                                    =   0.           
+     3:cgdo                                                    = 100.0000p      
+     3:cgsl                                                    =   0.           
+     3:cgso                                                    = 100.0000p      
+     3:cigc                                                    = 250.0000m      
+     3:cigd                                                    = 350.0000m      
+     3:cit                                                     =   0.           
+     3:ckappad                                                 = 600.0000m      
+     3:ckappas                                                 = 600.0000m      
+     3:cth0                                                    =   1.2430u      
+     3:deltavsat                                               = 500.0000m      
+     3:deltaw                                                  =   0.           
+     3:deltawcv                                                =   0.           
+     3:dlbin                                                   =   0.           
+     3:dlc                                                     =   0.           
+     3:dlcigd                                                  =   1.0000n      
+     3:dlcigs                                                  =   1.0000n      
+     3:drout                                                   =   1.0000       
+     3:dsub                                                    = 500.0000m      
+     3:dvt0                                                    =   0.           
+     3:dvt1                                                    =   1.0200       
+     3:dvtshift                                                =  10.0000m      
+     3:delvtrand                                               = 470.0000m      
+     3:egidl                                                   = 350.0000m      
+     3:egisl                                                   = 350.0000m      
+     3:eot                                                     = 678.0000p      
+     3:eotacc                                                  = 100.0000p      
+     3:eotbox                                                  = 140.0000n      
+     3:epsrox                                                  =   3.9000       
+     3:epsrsp                                                  =   3.9000       
+     3:epsrsub                                                 =  11.9000       
+     3:eta0                                                    =  50.0000m      
+     3:etamob                                                  =   2.0000       
+     3:etaqm                                                   = 540.0000m      
+     3:eu                                                      =   1.2000       
+     3:fpitch                                                  =  55.0000n      
+     3:hepi                                                    =   7.7500n      
+     3:igt                                                     =   2.5000       
+     3:ids0mult                                                =   3.0084       
+     3:k1rsce                                                  =   0.           
+     3:ksativ                                                  =   2.0000       
+     3:kt1                                                     =   0.           
+     3:kt1l                                                    =   0.           
+     3:lint                                                    =  -2.0000n      
+     3:lpe0                                                    =   0.           
+     3:lcdscd                                                  =  50.0000u      
+     3:lcdscdr                                                 =  50.0000u      
+     3:lrdsw                                                   = 200.0000m      
+     3:lrsd                                                    =   6.0000n      
+     3:lsp                                                     =   2.0000n      
+     3:lvsat                                                   =   0.           
+     3:mexp                                                    =   4.0000       
+     3:nbody                                                   = 1.000e+18      
+     3:nc0sub                                                  = 2.860e+25      
+     3:nfin                                                    =   1.0000       
+     3:ni0sub                                                  = 1.100e+16      
+     3:nigc                                                    =   1.0000       
+     3:nsd                                                     = 5.000e+20      
+     3:pclm                                                    =  50.0000m      
+     3:pclmcv                                                  =  13.0000m      
+     3:pclmg                                                   =   0.           
+     3:pclmgcv                                                 =   0.           
+     3:pdibl1                                                  =   0.           
+     3:pdibl2                                                  =   2.0000m      
+     3:phig                                                    =   4.3900       
+     3:phin                                                    =  50.0000m      
+     3:poxedge                                                 =   1.1000       
+     3:pqm                                                     = 660.0000m      
+     3:prt                                                     =   0.           
+     3:prwg                                                    =   0.           
+     3:ptwg                                                    =   0.           
+     3:ptwgt                                                   =   4.0000m      
+     3:pvag                                                    =   0.           
+     3:qm0                                                     =   1.0000m      
+     3:qmfactor                                                =   2.5000       
+     3:rdsw                                                    = 200.0000       
+     3:rdswmin                                                 =   0.           
+     3:rdwmin                                                  =   0.           
+     3:rshd                                                    =   0.           
+     3:rshs                                                    =   0.           
+     3:rswmin                                                  =   0.           
+     3:rth0                                                    = 225.0000m      
+     3:tbgasub                                                 = 473.0000u      
+     3:tbgbsub                                                 = 636.0000       
+     3:tgate                                                   =  20.0000n      
+     3:tgidl                                                   =  -7.0000m      
+     3:tmexp                                                   =   0.           
+     3:tnom                                                    =  25.0000       
+     3:toxp                                                    =   1.8300n      
+     3:u0                                                      =  25.0000m      
+     3:ua                                                      = 550.0000m      
+     3:ua1                                                     =   1.0320m      
+     3:ucs                                                     =   1.0000       
+     3:ucste                                                   =  -4.7750m      
+     3:ud                                                      =   0.           
+     3:ud1                                                     =   0.           
+     3:up                                                      =   0.           
+     3:ute                                                     =-700.0000m      
+     3:utl                                                     =   0.           
+     3:vasat                                                   = 200.0000m      
+     3:vasatcv                                                 = 200.0000m      
+     3:vsat                                                    =  80.0000k      
+     3:wr                                                      =   1.0000       
+     3:wth0                                                    = 260.0000n      
+     3:xl                                                      =   0.           
+     4:igbmod                                                  =   0.           
+     4:hfin                                                    =  15.0000n      
+     4:nseg                                                    =   5.0000       
+     4:l                                                       =  50.0000n      
+     4:capmod                                                  =   0.           
+     4:easub                                                   =   4.0500       
+     4:tfin                                                    =  24.0000n      
+     4:bulkmod                                                 =   1.0000       
+     4:coremod                                                 =   0.           
+     4:cgeomod                                                 =   2.0000       
+     4:devtype                                                 =   1.0000       
+     4:geomod                                                  =   2.0000       
+     4:gidlmod                                                 =   1.0000       
+     4:igcmod                                                  =   1.0000       
+     4:iimod                                                   =   0.           
+     4:ngate                                                   =   0.           
+     4:nqsmod                                                  =   0.           
+     4:rdsmod                                                  =   0.           
+     4:rgatemod                                                =   0.           
+     4:rgeomod                                                 =   0.           
+     4:sdterm                                                  =   0.           
+     4:shmod                                                   =   0.           
+     4:aigc                                                    =  14.0000m      
+     4:aigd                                                    =  11.5000m      
+     4:aigs                                                    =  11.5000m      
+     4:at                                                      =   1.0000m      
+     4:bg0sub                                                  =   1.1700       
+     4:bgidl                                                   = 100.0000x      
+     4:bgisl                                                   = 100.0000x      
+     4:bigc                                                    =   5.0000m      
+     4:bigd                                                    =   3.3200m      
+     4:bigs                                                    =   3.3200m      
+     4:cdsc                                                    =  10.0000m      
+     4:cdscd                                                   =  10.0000m      
+     4:cfd                                                     =  20.0000p      
+     4:cfs                                                     =  20.0000p      
+     4:cgbl                                                    =   0.           
+     4:cgbo                                                    =   0.           
+     4:cgdl                                                    =   0.           
+     4:cgdo                                                    = 100.0000p      
+     4:cgsl                                                    =   0.           
+     4:cgso                                                    = 100.0000p      
+     4:cigc                                                    = 250.0000m      
+     4:cigd                                                    = 350.0000m      
+     4:cit                                                     =   0.           
+     4:ckappad                                                 = 600.0000m      
+     4:ckappas                                                 = 600.0000m      
+     4:cth0                                                    =   1.2430u      
+     4:deltavsat                                               = 500.0000m      
+     4:deltaw                                                  =   0.           
+     4:deltawcv                                                =   0.           
+     4:dlbin                                                   =   0.           
+     4:dlc                                                     =   0.           
+     4:dlcigd                                                  =   1.0000n      
+     4:dlcigs                                                  =   1.0000n      
+     4:drout                                                   =   1.0000       
+     4:dsub                                                    = 500.0000m      
+     4:dvt0                                                    =   0.           
+     4:dvt1                                                    =   1.0200       
+     4:dvtshift                                                =  10.0000m      
+     4:delvtrand                                               =  15.0000m      
+     4:egidl                                                   = 350.0000m      
+     4:egisl                                                   = 350.0000m      
+     4:eot                                                     = 678.0000p      
+     4:eotacc                                                  = 100.0000p      
+     4:eotbox                                                  = 140.0000n      
+     4:epsrox                                                  =   3.9000       
+     4:epsrsp                                                  =   3.9000       
+     4:epsrsub                                                 =  11.9000       
+     4:eta0                                                    =  50.0000m      
+     4:etamob                                                  =   2.0000       
+     4:etaqm                                                   = 540.0000m      
+     4:eu                                                      =   1.2000       
+     4:fpitch                                                  =  55.0000n      
+     4:hepi                                                    =   7.7500n      
+     4:igt                                                     =   2.5000       
+     4:ids0mult                                                =   3.0084       
+     4:k1rsce                                                  =   0.           
+     4:ksativ                                                  =   2.0000       
+     4:kt1                                                     =   0.           
+     4:kt1l                                                    =   0.           
+     4:lint                                                    =  -2.0000n      
+     4:lpe0                                                    =   0.           
+     4:lcdscd                                                  =  50.0000u      
+     4:lcdscdr                                                 =  50.0000u      
+     4:lrdsw                                                   = 200.0000m      
+     4:lrsd                                                    =   6.0000n      
+     4:lsp                                                     =   2.0000n      
+     4:lvsat                                                   =   0.           
+     4:mexp                                                    =   4.0000       
+     4:nbody                                                   = 1.000e+18      
+     4:nc0sub                                                  = 2.860e+25      
+     4:nfin                                                    =   1.0000       
+     4:ni0sub                                                  = 1.100e+16      
+     4:nigc                                                    =   1.0000       
+     4:nsd                                                     = 5.000e+20      
+     4:pclm                                                    =  50.0000m      
+     4:pclmcv                                                  =  13.0000m      
+     4:pclmg                                                   =   0.           
+     4:pclmgcv                                                 =   0.           
+     4:pdibl1                                                  =   0.           
+     4:pdibl2                                                  =   2.0000m      
+     4:phig                                                    =   4.3900       
+     4:phin                                                    =  50.0000m      
+     4:poxedge                                                 =   1.1000       
+     4:pqm                                                     = 660.0000m      
+     4:prt                                                     =   0.           
+     4:prwg                                                    =   0.           
+     4:ptwg                                                    =   0.           
+     4:ptwgt                                                   =   4.0000m      
+     4:pvag                                                    =   0.           
+     4:qm0                                                     =   1.0000m      
+     4:qmfactor                                                =   2.5000       
+     4:rdsw                                                    = 200.0000       
+     4:rdswmin                                                 =   0.           
+     4:rdwmin                                                  =   0.           
+     4:rshd                                                    =   0.           
+     4:rshs                                                    =   0.           
+     4:rswmin                                                  =   0.           
+     4:rth0                                                    = 225.0000m      
+     4:tbgasub                                                 = 473.0000u      
+     4:tbgbsub                                                 = 636.0000       
+     4:tgate                                                   =  20.0000n      
+     4:tgidl                                                   =  -7.0000m      
+     4:tmexp                                                   =   0.           
+     4:tnom                                                    =  25.0000       
+     4:toxp                                                    =   1.8300n      
+     4:u0                                                      =  25.0000m      
+     4:ua                                                      = 550.0000m      
+     4:ua1                                                     =   1.0320m      
+     4:ucs                                                     =   1.0000       
+     4:ucste                                                   =  -4.7750m      
+     4:ud                                                      =   0.           
+     4:ud1                                                     =   0.           
+     4:up                                                      =   0.           
+     4:ute                                                     =-700.0000m      
+     4:utl                                                     =   0.           
+     4:vasat                                                   = 200.0000m      
+     4:vasatcv                                                 = 200.0000m      
+     4:vsat                                                    =  80.0000k      
+     4:wr                                                      =   1.0000       
+     4:wth0                                                    = 260.0000n      
+     4:xl                                                      =   0.           
+     5:igbmod                                                  =   0.           
+     5:hfin                                                    =  15.0000n      
+     5:nseg                                                    =   5.0000       
+     5:l                                                       =  14.0000n      
+     5:capmod                                                  =   0.           
+     5:easub                                                   =   4.0500       
+     5:tfin                                                    =  24.0000n      
+     5:bulkmod                                                 =   1.0000       
+     5:coremod                                                 =   0.           
+     5:cgeomod                                                 =   2.0000       
+     5:devtype                                                 =   0.           
+     5:geomod                                                  =   2.0000       
+     5:gidlmod                                                 =   1.0000       
+     5:igcmod                                                  =   1.0000       
+     5:iimod                                                   =   0.           
+     5:ngate                                                   =   0.           
+     5:nqsmod                                                  =   0.           
+     5:rdsmod                                                  =   0.           
+     5:rgatemod                                                =   0.           
+     5:rgeomod                                                 =   0.           
+     5:sdterm                                                  =   0.           
+     5:shmod                                                   =   0.           
+     5:aigc                                                    =  14.0000m      
+     5:aigd                                                    =  11.5000m      
+     5:aigs                                                    =  11.5000m      
+     5:at                                                      =   1.0000m      
+     5:bg0sub                                                  =   1.1700       
+     5:bgidl                                                   = 100.0000x      
+     5:bgisl                                                   = 100.0000x      
+     5:bigc                                                    =   5.0000m      
+     5:bigd                                                    =   3.3200m      
+     5:bigs                                                    =   3.3200m      
+     5:cdsc                                                    =  10.0000m      
+     5:cdscd                                                   =  10.0000m      
+     5:cfd                                                     =  20.0000p      
+     5:cfs                                                     =  20.0000p      
+     5:cgbl                                                    =   0.           
+     5:cgbo                                                    =   0.           
+     5:cgdl                                                    =   0.           
+     5:cgdo                                                    = 100.0000p      
+     5:cgsl                                                    =   0.           
+     5:cgso                                                    = 100.0000p      
+     5:cigc                                                    = 250.0000m      
+     5:cigd                                                    = 350.0000m      
+     5:cit                                                     =   0.           
+     5:ckappad                                                 = 600.0000m      
+     5:ckappas                                                 = 600.0000m      
+     5:cth0                                                    =   1.2430u      
+     5:deltavsat                                               = 500.0000m      
+     5:deltaw                                                  =   0.           
+     5:deltawcv                                                =   0.           
+     5:dlbin                                                   =   0.           
+     5:dlc                                                     =   0.           
+     5:dlcigd                                                  =   1.0000n      
+     5:dlcigs                                                  =   1.0000n      
+     5:drout                                                   =   1.0000       
+     5:dsub                                                    = 500.0000m      
+     5:dvt0                                                    =   0.           
+     5:dvt1                                                    =   1.0200       
+     5:dvtshift                                                =  10.0000m      
+     5:delvtrand                                               = 470.0000m      
+     5:egidl                                                   = 350.0000m      
+     5:egisl                                                   = 350.0000m      
+     5:eot                                                     = 678.0000p      
+     5:eotacc                                                  = 100.0000p      
+     5:eotbox                                                  = 140.0000n      
+     5:epsrox                                                  =   3.9000       
+     5:epsrsp                                                  =   3.9000       
+     5:epsrsub                                                 =  11.9000       
+     5:eta0                                                    =  50.0000m      
+     5:etamob                                                  =   2.0000       
+     5:etaqm                                                   = 540.0000m      
+     5:eu                                                      =   1.2000       
+     5:fpitch                                                  =  55.0000n      
+     5:hepi                                                    =   7.7500n      
+     5:igt                                                     =   2.5000       
+     5:ids0mult                                                =   3.0084       
+     5:k1rsce                                                  =   0.           
+     5:ksativ                                                  =   2.0000       
+     5:kt1                                                     =   0.           
+     5:kt1l                                                    =   0.           
+     5:lint                                                    =  -2.0000n      
+     5:lpe0                                                    =   0.           
+     5:lcdscd                                                  =  50.0000u      
+     5:lcdscdr                                                 =  50.0000u      
+     5:lrdsw                                                   = 200.0000m      
+     5:lrsd                                                    =   6.0000n      
+     5:lsp                                                     =   2.0000n      
+     5:lvsat                                                   =   0.           
+     5:mexp                                                    =   4.0000       
+     5:nbody                                                   = 1.000e+18      
+     5:nc0sub                                                  = 2.860e+25      
+     5:nfin                                                    =   1.0000       
+     5:ni0sub                                                  = 1.100e+16      
+     5:nigc                                                    =   1.0000       
+     5:nsd                                                     = 5.000e+20      
+     5:pclm                                                    =  50.0000m      
+     5:pclmcv                                                  =  13.0000m      
+     5:pclmg                                                   =   0.           
+     5:pclmgcv                                                 =   0.           
+     5:pdibl1                                                  =   0.           
+     5:pdibl2                                                  =   2.0000m      
+     5:phig                                                    =   4.3900       
+     5:phin                                                    =  50.0000m      
+     5:poxedge                                                 =   1.1000       
+     5:pqm                                                     = 660.0000m      
+     5:prt                                                     =   0.           
+     5:prwg                                                    =   0.           
+     5:ptwg                                                    =   0.           
+     5:ptwgt                                                   =   4.0000m      
+     5:pvag                                                    =   0.           
+     5:qm0                                                     =   1.0000m      
+     5:qmfactor                                                =   2.5000       
+     5:rdsw                                                    = 200.0000       
+     5:rdswmin                                                 =   0.           
+     5:rdwmin                                                  =   0.           
+     5:rshd                                                    =   0.           
+     5:rshs                                                    =   0.           
+     5:rswmin                                                  =   0.           
+     5:rth0                                                    = 225.0000m      
+     5:tbgasub                                                 = 473.0000u      
+     5:tbgbsub                                                 = 636.0000       
+     5:tgate                                                   =  20.0000n      
+     5:tgidl                                                   =  -7.0000m      
+     5:tmexp                                                   =   0.           
+     5:tnom                                                    =  25.0000       
+     5:toxp                                                    =   1.8300n      
+     5:u0                                                      =  25.0000m      
+     5:ua                                                      = 550.0000m      
+     5:ua1                                                     =   1.0320m      
+     5:ucs                                                     =   1.0000       
+     5:ucste                                                   =  -4.7750m      
+     5:ud                                                      =   0.           
+     5:ud1                                                     =   0.           
+     5:up                                                      =   0.           
+     5:ute                                                     =-700.0000m      
+     5:utl                                                     =   0.           
+     5:vasat                                                   = 200.0000m      
+     5:vasatcv                                                 = 200.0000m      
+     5:vsat                                                    =  80.0000k      
+     5:wr                                                      =   1.0000       
+     5:wth0                                                    = 260.0000n      
+     5:xl                                                      =   0.           
+     6:igbmod                                                  =   0.           
+     6:hfin                                                    =  15.0000n      
+     6:nseg                                                    =   5.0000       
+     6:l                                                       =  10.0000n      
+     6:capmod                                                  =   0.           
+     6:easub                                                   =   4.0500       
+     6:tfin                                                    =  24.0000n      
+     6:bulkmod                                                 =   1.0000       
+     6:coremod                                                 =   0.           
+     6:cgeomod                                                 =   2.0000       
+     6:devtype                                                 =   1.0000       
+     6:geomod                                                  =   2.0000       
+     6:gidlmod                                                 =   1.0000       
+     6:igcmod                                                  =   1.0000       
+     6:iimod                                                   =   0.           
+     6:ngate                                                   =   0.           
+     6:nqsmod                                                  =   0.           
+     6:rdsmod                                                  =   0.           
+     6:rgatemod                                                =   0.           
+     6:rgeomod                                                 =   0.           
+     6:sdterm                                                  =   0.           
+     6:shmod                                                   =   0.           
+     6:aigc                                                    =  14.0000m      
+     6:aigd                                                    =  11.5000m      
+     6:aigs                                                    =  11.5000m      
+     6:at                                                      =   1.0000m      
+     6:bg0sub                                                  =   1.1700       
+     6:bgidl                                                   = 100.0000x      
+     6:bgisl                                                   = 100.0000x      
+     6:bigc                                                    =   5.0000m      
+     6:bigd                                                    =   3.3200m      
+     6:bigs                                                    =   3.3200m      
+     6:cdsc                                                    =  10.0000m      
+     6:cdscd                                                   =  10.0000m      
+     6:cfd                                                     =  20.0000p      
+     6:cfs                                                     =  20.0000p      
+     6:cgbl                                                    =   0.           
+     6:cgbo                                                    =   0.           
+     6:cgdl                                                    =   0.           
+     6:cgdo                                                    = 100.0000p      
+     6:cgsl                                                    =   0.           
+     6:cgso                                                    = 100.0000p      
+     6:cigc                                                    = 250.0000m      
+     6:cigd                                                    = 350.0000m      
+     6:cit                                                     =   0.           
+     6:ckappad                                                 = 600.0000m      
+     6:ckappas                                                 = 600.0000m      
+     6:cth0                                                    =   1.2430u      
+     6:deltavsat                                               = 500.0000m      
+     6:deltaw                                                  =   0.           
+     6:deltawcv                                                =   0.           
+     6:dlbin                                                   =   0.           
+     6:dlc                                                     =   0.           
+     6:dlcigd                                                  =   1.0000n      
+     6:dlcigs                                                  =   1.0000n      
+     6:drout                                                   =   1.0000       
+     6:dsub                                                    = 500.0000m      
+     6:dvt0                                                    =   0.           
+     6:dvt1                                                    =   1.0200       
+     6:dvtshift                                                =  10.0000m      
+     6:delvtrand                                               =  15.0000m      
+     6:egidl                                                   = 350.0000m      
+     6:egisl                                                   = 350.0000m      
+     6:eot                                                     = 678.0000p      
+     6:eotacc                                                  = 100.0000p      
+     6:eotbox                                                  = 140.0000n      
+     6:epsrox                                                  =   3.9000       
+     6:epsrsp                                                  =   3.9000       
+     6:epsrsub                                                 =  11.9000       
+     6:eta0                                                    =  50.0000m      
+     6:etamob                                                  =   2.0000       
+     6:etaqm                                                   = 540.0000m      
+     6:eu                                                      =   1.2000       
+     6:fpitch                                                  =  55.0000n      
+     6:hepi                                                    =   7.7500n      
+     6:igt                                                     =   2.5000       
+     6:ids0mult                                                =   3.0084       
+     6:k1rsce                                                  =   0.           
+     6:ksativ                                                  =   2.0000       
+     6:kt1                                                     =   0.           
+     6:kt1l                                                    =   0.           
+     6:lint                                                    =  -2.0000n      
+     6:lpe0                                                    =   0.           
+     6:lcdscd                                                  =  50.0000u      
+     6:lcdscdr                                                 =  50.0000u      
+     6:lrdsw                                                   = 200.0000m      
+     6:lrsd                                                    =   6.0000n      
+     6:lsp                                                     =   2.0000n      
+     6:lvsat                                                   =   0.           
+     6:mexp                                                    =   4.0000       
+     6:nbody                                                   = 1.000e+18      
+     6:nc0sub                                                  = 2.860e+25      
+     6:nfin                                                    =   1.0000       
+     6:ni0sub                                                  = 1.100e+16      
+     6:nigc                                                    =   1.0000       
+     6:nsd                                                     = 5.000e+20      
+     6:pclm                                                    =  50.0000m      
+     6:pclmcv                                                  =  13.0000m      
+     6:pclmg                                                   =   0.           
+     6:pclmgcv                                                 =   0.           
+     6:pdibl1                                                  =   0.           
+     6:pdibl2                                                  =   2.0000m      
+     6:phig                                                    =   4.3900       
+     6:phin                                                    =  50.0000m      
+     6:poxedge                                                 =   1.1000       
+     6:pqm                                                     = 660.0000m      
+     6:prt                                                     =   0.           
+     6:prwg                                                    =   0.           
+     6:ptwg                                                    =   0.           
+     6:ptwgt                                                   =   4.0000m      
+     6:pvag                                                    =   0.           
+     6:qm0                                                     =   1.0000m      
+     6:qmfactor                                                =   2.5000       
+     6:rdsw                                                    = 200.0000       
+     6:rdswmin                                                 =   0.           
+     6:rdwmin                                                  =   0.           
+     6:rshd                                                    =   0.           
+     6:rshs                                                    =   0.           
+     6:rswmin                                                  =   0.           
+     6:rth0                                                    = 225.0000m      
+     6:tbgasub                                                 = 473.0000u      
+     6:tbgbsub                                                 = 636.0000       
+     6:tgate                                                   =  20.0000n      
+     6:tgidl                                                   =  -7.0000m      
+     6:tmexp                                                   =   0.           
+     6:tnom                                                    =  25.0000       
+     6:toxp                                                    =   1.8300n      
+     6:u0                                                      =  25.0000m      
+     6:ua                                                      = 550.0000m      
+     6:ua1                                                     =   1.0320m      
+     6:ucs                                                     =   1.0000       
+     6:ucste                                                   =  -4.7750m      
+     6:ud                                                      =   0.           
+     6:ud1                                                     =   0.           
+     6:up                                                      =   0.           
+     6:ute                                                     =-700.0000m      
+     6:utl                                                     =   0.           
+     6:vasat                                                   = 200.0000m      
+     6:vasatcv                                                 = 200.0000m      
+     6:vsat                                                    =  80.0000k      
+     6:wr                                                      =   1.0000       
+     6:wth0                                                    = 260.0000n      
+     6:xl                                                      =   0.           
+
+
+
+
+ constants  - tnom         kt           vt           gapsi        ni
+            298.15000    4.1163e-21    25.69184m     1.11562    1.2565e+16 
+  **info** (diode.sp:18) DC voltage reset to initial transient source value in source 0:v3. new dc=0.0000D+00
+ **info** *pvaI* Creating VA module (bsimcmg) for instance XD0.XMN1
+
+ **info** *pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+
+ End of GMD creation on Fri May 23 19:06:36 2025	
+
+
+ **warning** *pvaW* (31) FPE: Encountered numerical NaN with node (di, si) (Z:/SIdesign/NS1diodeW//source/bsimcmg_body.include:3729)
+
+ **warning** *pvaW*           in N/A-instname(bsimcmg)
+
+ **warning** *pvaW* (31)      For a complete list of FPE warnings, please setenv PVA_ENABLE_FPE3 2
+
+ **warning** *pvaW* (31)      For debugging, please use $strobe to print the value of signal.
+
+
+ **warning**: parameter CAPMOD for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter COREMOD for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter NIGC for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter PCLMGCV for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter PRWG for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter VASAT for instance XD0.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter VASATCV for instance XD0.XMN1 does not exist in verilog-A module
+
+ **info** *pvaI* Creating VA module (bsimcmg) for instance XD0.XMP1
+
+ **info** *pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+
+ End of GMD creation on Fri May 23 19:06:36 2025	
+
+
+ **warning**: parameter CAPMOD for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter COREMOD for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter NIGC for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter PCLMGCV for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter PRWG for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter VASAT for instance XD0.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter VASATCV for instance XD0.XMP1 does not exist in verilog-A module
+
+ **info** *pvaI* Creating VA module (bsimcmg) for instance XINP.XMN1
+
+ **info** *pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+
+ End of GMD creation on Fri May 23 19:06:36 2025	
+
+
+ **warning**: parameter CAPMOD for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter COREMOD for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter NIGC for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter PCLMGCV for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter PRWG for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter VASAT for instance XINP.XMN1 does not exist in verilog-A module
+
+ **warning**: parameter VASATCV for instance XINP.XMN1 does not exist in verilog-A module
+
+ **info** *pvaI* Creating VA module (bsimcmg) for instance XINP.XMP1
+
+ **info** *pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+
+ End of GMD creation on Fri May 23 19:06:36 2025	
+
+
+ **warning**: parameter CAPMOD for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter COREMOD for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter NIGC for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter PCLMGCV for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter PRWG for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter VASAT for instance XINP.XMP1 does not exist in verilog-A module
+
+ **warning**: parameter VASATCV for instance XINP.XMP1 does not exist in verilog-A module
+
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** circuit element summary tnom=  25.000 temp=  25.000 ******
+
+
+ **** independent sources
+
+     name         node1        node2      dc volt    ac mag    ac phase    type
+  v1  ndd               0                  350.0000m    0.         0.      dc   
+  v2  nss               0                 -350.0000m    0.         0.      dc   
+  v3  0                 ni                   0.         0.         0.      pwl  
+                time        value
+
+                   0.           0.     
+                   2.0000n      0.     
+                   4.0000n     29.1667m
+                   6.0000n     29.1667m
+                   8.0000n      0.     
+                  10.0000n      0.     
+                  12.0000n    -29.1667m
+                  14.0000n    -29.1667m
+                  16.0000n      0.     
+
+
+  vb  ndd               nddb                 0.         0.         0.      dc   
+  vcontr  nia               nib                  0.         0.         0.      dc   
+
+
+ **** subcircuit calls
+    name        subcircuit         external nodes
+
+
+         0:xinp     inv_x5        0:ndd    0:nss    0:ni         0:nia
+
+         0:xd0      d_x1        0:nddb    0:nss    0:nib
+         1:xmp1     bsimcmg(        0:nia    0:ni    0:ndd         0:ndd
+
+         1:xmn1     bsimcmg(        0:nia    0:ni    0:nss         0:nss
+
+         2:xmp1     bsimcmg(        0:nib    0:nib    0:nddb         0:nddb
+
+         2:xmn1     bsimcmg(        0:nib    0:nib    0:nss         0:nss
+
+  
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** element node table
+                                              
+ 0                v1     v2        v3         
+ ndd              v1     vb        xinp.xmp1  
+ nddb             vb     xd0.xmp1             
+ ni               v3     xinp.xmp1 xinp.xmn1  
+ nia              vcontr xinp.xmp1 xinp.xmn1  
+ nib              vcontr xd0.xmp1  xd0.xmn1   
+ nss              v2     xinp.xmn1 xd0.xmn1   
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=Z:\SIdesign\NS1diodeW\diode.pa0
+
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** temperature-adjusted values tnom=  25.000 temp=  25.000 ******
+
+ constants  - temp             kt               vt               gapsi            ni
+            298.1500         4.116e-21         25.6918m          1.1156         1.256e+16      
+ End of pVA setup    on Fri May 23 19:06:36 2025	
+
+
+ Begin of pVA simulation on Fri May 23 19:06:36 2025	
+
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:ndd     = 350.0000m 0:nddb    = 350.0000m 0:ni      =   0.     
+ +0:nia     =-501.0998u 0:nib     =-501.0998u 0:nss     =-350.0000m
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306110e-01
+
+ VTH = 3.385525e-01
+
+ **info** *pvaI* minimum timestep = 1e-19
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306110e-01
+
+ VTH = 3.385525e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306110e-01
+
+ VTH = 3.385525e-01
+
+ VTH = -3.329900e-01
+
+ VTH = -3.329901e-01
+
+ VTH = 3.429747e-01
+
+ VTH = -3.306212e-01
+
+ VTH = 3.385335e-01
+
+ VTH = -3.329902e-01
+
+ VTH = 3.429743e-01
+
+ VTH = -3.306492e-01
+
+ VTH = 3.384808e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429736e-01
+
+ VTH = -3.307004e-01
+
+ VTH = 3.383846e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429735e-01
+
+ VTH = -3.307132e-01
+
+ VTH = 3.383605e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429735e-01
+
+ VTH = -3.307132e-01
+
+ VTH = 3.383605e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429735e-01
+
+ VTH = -3.307114e-01
+
+ VTH = 3.383640e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429736e-01
+
+ VTH = -3.307053e-01
+
+ VTH = 3.383754e-01
+
+ VTH = -3.329903e-01
+
+ VTH = 3.429738e-01
+
+ VTH = -3.306853e-01
+
+ VTH = 3.384131e-01
+
+ VTH = -3.329901e-01
+
+ VTH = 3.429745e-01
+
+ VTH = -3.306342e-01
+
+ VTH = 3.385091e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306111e-01
+
+ VTH = 3.385523e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306111e-01
+
+ VTH = 3.385524e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429752e-01
+
+ VTH = -3.305853e-01
+
+ VTH = 3.386006e-01
+
+ VTH = -3.329899e-01
+
+ VTH = 3.429757e-01
+
+ VTH = -3.305511e-01
+
+ VTH = 3.386647e-01
+
+ VTH = -3.329897e-01
+
+ VTH = 3.429763e-01
+
+ VTH = -3.305072e-01
+
+ VTH = 3.387464e-01
+
+ VTH = -3.329897e-01
+
+ VTH = 3.429763e-01
+
+ VTH = -3.305068e-01
+
+ VTH = 3.387473e-01
+
+ VTH = -3.329898e-01
+
+ VTH = 3.429759e-01
+
+ VTH = -3.305332e-01
+
+ VTH = 3.386980e-01
+
+ VTH = -3.329899e-01
+
+ VTH = 3.429755e-01
+
+ VTH = -3.305666e-01
+
+ VTH = 3.386356e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306115e-01
+
+ VTH = 3.385516e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306110e-01
+
+ VTH = 3.385525e-01
+
+ VTH = -3.329900e-01
+
+ VTH = 3.429749e-01
+
+ VTH = -3.306110e-01
+
+ VTH = 3.385525e-01
+
+ ******
+ *custom compiler version s-2021.09
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+x
+
+ time         current   
+             vcontr     
+    0.         31.3379n 
+  100.00000p   31.3379n 
+  200.00000p   31.3379n 
+  300.00000p   31.3379n 
+  400.00000p   31.3379n 
+  500.00000p   31.3379n 
+  600.00000p   31.3379n 
+  700.00000p   31.3379n 
+  800.00000p   31.3379n 
+  900.00000p   31.3379n 
+    1.00000n   31.3379n 
+    1.10000n   31.3379n 
+    1.20000n   31.3379n 
+    1.30000n   31.3379n 
+    1.40000n   31.3379n 
+    1.50000n   31.3379n 
+    1.60000n   31.3379n 
+    1.70000n   31.3379n 
+    1.80000n   31.3379n 
+    1.90000n   31.3379n 
+    2.00000n   31.3379n 
+    2.10000n  333.2142n 
+    2.20000n  635.0937n 
+    2.30000n  937.2131n 
+    2.40000n    1.2393u 
+    2.50000n    1.5415u 
+    2.60000n    1.8436u 
+    2.70000n    2.1457u 
+    2.80000n    2.4476u 
+    2.90000n    2.7494u 
+    3.00000n    3.0511u 
+    3.10000n    3.3529u 
+    3.20000n    3.6546u 
+    3.30000n    3.9564u 
+    3.40000n    4.2581u 
+    3.50000n    4.5599u 
+    3.60000n    4.8617u 
+    3.70000n    5.1634u 
+    3.80000n    5.4655u 
+    3.90000n    5.7680u 
+    4.00000n    6.0705u 
+    4.10000n    6.0709u 
+    4.20000n    6.0714u 
+    4.30000n    6.0719u 
+    4.40000n    6.0724u 
+    4.50000n    6.0724u 
+    4.60000n    6.0724u 
+    4.70000n    6.0724u 
+    4.80000n    6.0724u 
+    4.90000n    6.0724u 
+    5.00000n    6.0724u 
+    5.10000n    6.0724u 
+    5.20000n    6.0724u 
+    5.30000n    6.0724u 
+    5.40000n    6.0724u 
+    5.50000n    6.0724u 
+    5.60000n    6.0724u 
+    5.70000n    6.0724u 
+    5.80000n    6.0724u 
+    5.90000n    6.0724u 
+    6.00000n    6.0724u 
+    6.10000n    5.7718u 
+    6.20000n    5.4694u 
+    6.30000n    5.1674u 
+    6.40000n    4.8653u 
+    6.50000n    4.5633u 
+    6.60000n    4.2614u 
+    6.70000n    3.9596u 
+    6.80000n    3.6579u 
+    6.90000n    3.3562u 
+    7.00000n    3.0544u 
+    7.10000n    2.7527u 
+    7.20000n    2.4510u 
+    7.30000n    2.1492u 
+    7.40000n    1.8475u 
+    7.50000n    1.5458u 
+    7.60000n    1.2436u 
+    7.70000n  940.9969n 
+    7.80000n  638.4209n 
+    7.90000n  335.8449n 
+    8.00000n   33.2688n 
+    8.10000n   32.8828n 
+    8.20000n   32.4967n 
+    8.30000n   32.1107n 
+    8.40000n   31.7246n 
+    8.50000n   31.3385n 
+    8.60000n   31.3389n 
+    8.70000n   31.3393n 
+    8.80000n   31.3397n 
+    8.90000n   31.3401n 
+    9.00000n   31.3405n 
+    9.10000n   31.3403n 
+    9.20000n   31.3397n 
+    9.30000n   31.3392n 
+    9.40000n   31.3386n 
+    9.50000n   31.3380n 
+    9.60000n   31.3375n 
+    9.70000n   31.3369n 
+    9.80000n   31.3363n 
+    9.90000n   31.3357n 
+   10.00000n   31.3352n 
+   10.10000n -272.1617n 
+   10.20000n -575.6586n 
+   10.30000n -879.1555n 
+   10.40000n   -1.1827u 
+   10.50000n   -1.4861u 
+   10.60000n   -1.7924u 
+   10.70000n   -2.0986u 
+   10.80000n   -2.4048u 
+   10.90000n   -2.7111u 
+   11.00000n   -3.0173u 
+   11.10000n   -3.3235u 
+   11.20000n   -3.6312u 
+   11.30000n   -3.9415u 
+   11.40000n   -4.2519u 
+   11.50000n   -4.5623u 
+   11.60000n   -4.8726u 
+   11.70000n   -5.1830u 
+   11.80000n   -5.4933u 
+   11.90000n   -5.8037u 
+   12.00000n   -6.1141u 
+   12.10000n   -6.1145u 
+   12.20000n   -6.1148u 
+   12.30000n   -6.1152u 
+   12.40000n   -6.1156u 
+   12.50000n   -6.1160u 
+   12.60000n   -6.1160u 
+   12.70000n   -6.1160u 
+   12.80000n   -6.1160u 
+   12.90000n   -6.1160u 
+   13.00000n   -6.1160u 
+   13.10000n   -6.1160u 
+   13.20000n   -6.1160u 
+   13.30000n   -6.1160u 
+   13.40000n   -6.1160u 
+   13.50000n   -6.1160u 
+   13.60000n   -6.1160u 
+   13.70000n   -6.1160u 
+   13.80000n   -6.1160u 
+   13.90000n   -6.1160u 
+   14.00000n   -6.1160u 
+   14.10000n   -5.8050u 
+   14.20000n   -5.4940u 
+   14.30000n   -5.1829u 
+   14.40000n   -4.8719u 
+   14.50000n   -4.5609u 
+   14.60000n   -4.2529u 
+   14.70000n   -3.9449u 
+   14.80000n   -3.6369u 
+   14.90000n   -3.3290u 
+   15.00000n   -3.0210u 
+   15.10000n   -2.7130u 
+   15.20000n   -2.4072u 
+   15.30000n   -2.1026u 
+   15.40000n   -1.7981u 
+   15.50000n   -1.4935u 
+   15.60000n   -1.1889u 
+   15.70000n -884.3326n 
+   15.80000n -579.7584n 
+   15.90000n -275.1843n 
+   16.00000n   29.3899n 
+   16.10000n   29.7794n 
+   16.20000n   30.1688n 
+   16.30000n   30.5583n 
+   16.40000n   30.9478n 
+   16.50000n   31.3373n 
+   16.60000n   31.3377n 
+   16.70000n   31.3382n 
+   16.80000n   31.3386n 
+   16.90000n   31.3391n 
+   17.00000n   31.3395n 
+   17.10000n   31.3399n 
+   17.20000n   31.3399n 
+   17.30000n   31.3394n 
+   17.40000n   31.3390n 
+   17.50000n   31.3385n 
+   17.60000n   31.3381n 
+   17.70000n   31.3377n 
+   17.80000n   31.3372n 
+   17.90000n   31.3368n 
+   18.00000n   31.3364n 
+   18.10000n   31.3359n 
+   18.20000n   31.3360n 
+   18.30000n   31.3364n 
+   18.40000n   31.3369n 
+   18.50000n   31.3373n 
+   18.60000n   31.3377n 
+   18.70000n   31.3382n 
+   18.80000n   31.3386n 
+   18.90000n   31.3391n 
+   19.00000n   31.3395n 
+   19.10000n   31.3399n 
+   19.20000n   31.3398n 
+   19.30000n   31.3393n 
+   19.40000n   31.3388n 
+   19.50000n   31.3383n 
+   19.60000n   31.3378n 
+   19.70000n   31.3373n 
+   19.80000n   31.3368n 
+   19.90000n   31.3362n 
+   20.00000n   31.3357n 
+y
+
+          ***** job concluded
+ ******  
+ *custom compiler version s-2021.09
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      19 # elements   =       9
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       4
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1           6
+  transient          0.03         201          76          38 rev=         2
+  readin            15.00
+  errchk             0.10
+  setup              0.01
+  output             0.00
+
+
+           peak memory used         90.46 megabytes
+           total cpu time           15.16 seconds
+           total elapsed time       15.22 seconds
+           job started at     19:06:21 05/23/2025
+           job ended   at     19:06:36 05/23/2025
+           job total runtime        15.22 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.04(s)

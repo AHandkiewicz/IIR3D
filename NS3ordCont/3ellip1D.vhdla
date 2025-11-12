@@ -1,0 +1,77 @@
+library VLSI;
+use VLSI.SI.all;
+entity example is port (
+	terminal input Vin : electrical;
+	terminal output Vout : electrical;
+	terminal ground gnd: electrical);
+end entity example;
+architecture example_arch of example is
+variable v1,v2,v3 : real;
+-- input vertices
+variable v4: real;
+
+ constant c1: real := 0.740619838840654;
+ constant c4: real := 0.999423843348229;
+ constant c3: real := 0.961527141230247;
+ constant c2: real := 0.169462664984342;
+ constant IG1: real := -0.959979066177258;
+ constant IG2: real := -0.838080235881442;
+ constant g1: real := 0.997962314578629;
+ constant g2: real := 0.110630682694843;
+
+-- components
+component IG is
+generic( transcon : real );
+port( terminal input x : electrical;
+terminal output y : electrical;
+terminal ground gnd : electrical );
+end component IG;
+
+
+component C is
+generic( capacity : real );
+port( terminal x : electrical;
+terminal y : electrical );
+end component C;
+
+
+component G is
+generic( conduct : real );
+port( terminal x : electrical;
+terminal y : electrical );
+end component G;
+
+begin
+-- input signals
+Vin <= v4;
+-- output signals
+Vout <= v3;
+-- capacitors with different dimensions
+--C1 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>gnd);
+C1 :	C 	generic map( capacity=>c1 )
+		port map( x=>v1, y=>gnd );
+--C : GC_CAP generic map(dim=>1) port map (Ni=>v2, Nj=>gnd);
+C4 :	C 	generic map( capacity=>c4 )
+		port map( x=>v2, y=>gnd );
+--C3 : GC_CAP generic map(dim=>1) port map (Ni=>v3, Nj=>gnd);
+C3 :	C 	generic map( capacity=>c3 )
+		port map( x=>v3, y=>gnd );
+--C2 : GC_CAP generic map(dim=>1) port map (Ni=>v1, Nj=>v3);
+C2 :	C 	generic map( capacity=>c2 )
+		port map( x=>v1, y=>v3 );
+-- conductances with I/O signals
+--Gi : GC_CON port map (Ni=>Vin, Nj=>v1);
+G1 :	G 	generic map( conduct=>g1 )
+		port map( x=>v4, y=>v1 );
+--Go : GC_CON port map (Ni=>v3, Nj=>gnd, Vo=>Vout);
+G2 :	G 	generic map( conduct=>g2 )
+		port map( x=>v3, y=>gnd );
+-- gyrators
+--ig1 : GC_GYR port map( Ni=>v1, Nj=>v2);
+ig1 :	IG 	generic map( transcon=>IG1 )
+		port map( x=>v1, y=>v2, gnd=>gnd );
+--ig2 : GC_GYR port map( Ni=>v2, Nj=>v3);
+ig2 :	IG 	generic map( transcon=>IG2 )
+		port map( x=>v2, y=>v3, gnd=>gnd );
+
+end architecture;

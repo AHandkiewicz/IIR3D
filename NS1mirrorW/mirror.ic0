@@ -1,0 +1,25 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 win64"
+* "format" "HSP"
+* "rundate" "18:42:22 06/13/2025 "
+* "netlist" "mirror.sp "
+* "runtitle" "*custom compiler version s-2021.09"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ ndd = 350.0000m       
++ nia = -60.5611u       
++ nib = -60.5611u       
++ niln =  -1.6059u       
++ nilp =  -1.6059u       
++ nin = -60.5611u       
++ ninn =   0.            
++ ninp =   0.            
++ nion =  -1.6059u       
++ niop =  -1.6059u       
++ nip = -60.5611u       
++ nss =-350.0000m       
+***   END: Saved Operating Point ***                     

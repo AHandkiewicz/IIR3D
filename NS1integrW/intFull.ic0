@@ -1,0 +1,44 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 win64"
+* "format" "HSP"
+* "rundate" "16:35:11 08/29/2025 "
+* "netlist" "intFull.sp "
+* "runtitle" "*custom compiler version s-2021.09"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clkn = 300.0000m       
++ clkp =-300.0000m       
++ ndd = 350.0000m       
++ niin = 165.6297u       
++ niip = 165.6297u       
++ niln1 = 137.9108u       
++ nilp1 = 137.9108u       
++ nin = 165.6297u       
++ ninn =   0.            
++ ninp =   0.            
++ nion = 137.9108u       
++ niop = 137.9108u       
++ nip = 165.6297u       
++ nss =-350.0000m       
++ td =   0.            
++ tf =   0.            
++ tp =   0.            
++ tpe =   0.            
++ tr =   0.            
++ xint.nind =-891.6592u       
++ xint.nipd =-891.6586u       
++ xint.nond =  48.3365u       
++ xint.nopd =  48.3365u       
++ xint.xdel.nina = 131.0952u       
++ xint.xdel.ninao =  -1.7126n       
++ xint.xdel.ninaos =  93.6755f       
++ xint.xdel.ninas = 178.8203u       
++ xint.xdel.nipa = 131.0952u       
++ xint.xdel.nipao =  -1.7126n       
++ xint.xdel.nipaos =  93.6755f       
++ xint.xdel.nipas = 178.8203u       
+***   END: Saved Operating Point ***                     

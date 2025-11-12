@@ -1,0 +1,39 @@
+library VLSI;
+use VLSI.SI.all;
+-------------------------------------
+entity example is port (
+	terminal input Vin : electrical;
+	terminal output Vout : electrical;
+	terminal ground gnd: electrical);
+end entity example;
+-------------------------------------
+-------------------------------------
+architecture EQUATION of example is
+
+ variable v1, v2 : real;
+
+ constant const01 : real := 1.097;
+ constant const02 : real := 1.055;
+ constant const03 : real := 0.1862;
+ constant const04 : real := 0.9605;
+ constant const05 : real := 0.8386;
+ constant const06 : real := 0.741;
+ constant const07 : real := 0.09782;
+ constant const08 : real := 0.1498;
+
+ begin 
+
+   v1 := INT( + Vin * const01 - v1 * const01 + v2 * const02 )  + Vout * const03 ;
+   v2 := INT( - v1 * const04 + Vout * const05 );
+   Vout := INT( - v2 * const06 - Vout * const07 )  + v1 * const08 ;
+
+   -- nodes with constants' description:
+   -- v1 := INT( + Vin * ( g1 ) / ( + c1 + c2 ) - v1 * ( + g1 ) / ( + c1 + c2 ) - v2 * ( ( + IG1 ) / ( + c1 + c2 ) ) )   - Vout * ( ( - c2 ) / ( + c1 + c2 ) ) ;
+   -- v2 := INT( - v1 * ( ( - IG1 ) / ( + c4 ) ) - Vout * ( ( + IG2 ) / ( + c4 ) ) );
+   -- Vout := INT( - v2 * ( ( - IG2 ) / ( + c3 + c2 ) ) - Vout * ( + g2 ) / ( + c3 + c2 ) )   - v1 * ( ( - c2 ) / ( + c3 + c2 ) ) ;
+
+end architecture EQUATION;
+
+-------------------------------------
+-------------------------------------
+

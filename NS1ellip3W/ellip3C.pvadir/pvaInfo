@@ -1,0 +1,18 @@
+libepva built by synopsyshspmgr synmake_pva_build  on Mon Jul 26 15:45:43 CST 2021 - p4:
+
+======================================
+HVA Verilog-A Modules (filename:line#)
+--------------------------------------
+ N  bsimcmg (Z:/SIdesign/NS1ellip3W//source/bsimcmg_body.include:83)
+--------------------------------------
+Total 1 module(s) loaded.
+======================================
+
+======================================
+Lists of Used Modules during GMD Setup
+--------------------------------------
+    bsimcmg
+--------------------------------------
+Total 1 module(s) used.
+======================================
+

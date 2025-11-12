@@ -1,0 +1,88 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 win64"
+* "format" "HSP"
+* "rundate" "19:03:55 09/14/2025 "
+* "netlist" "ellip3C.sp "
+* "runtitle" "*custom compiler version s-2021.09"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clkn = 300.0000m       
++ clkp =-300.0000m       
++ ndd = 350.0000m       
++ niln = 413.1846u       
++ nilp = 413.1846u       
++ nin =   1.8871n       
++ ninn =   0.            
++ ninp =   0.            
++ nip =   1.8871n       
++ nss =-350.0000m       
++ s01n = -30.6879u       
++ s01p = -30.6879u       
++ s1n =   1.8871n       
++ s1p =   1.8871n       
++ s2n =-372.4944u       
++ s2no = -42.8953u       
++ s2p =-372.4944u       
++ s2po = -42.8953u       
++ s3n = 839.6778p       
++ s3p = 839.6778p       
++ s4n =-316.3283u       
++ s4p =-316.3283u       
++ s5n = 587.6083p       
++ s5no = -21.4698u       
++ s5noo =-140.6614u       
++ s5p = 587.6083p       
++ s5po = -21.4698u       
++ s5poo =-140.6614u       
++ s6n =-228.8689u       
++ s6no =-119.1313u       
++ s6p =-228.8689u       
++ s6po =-119.1313u       
++ s7n = 413.1846u       
++ s7p = 413.1846u       
++ td =   0.            
++ tf =   0.            
++ tp =   0.            
++ tpe =   0.            
++ tr =   0.            
++ xint0.nind =-709.1878u       
++ xint0.nipd =-709.1878u       
++ xint0.nond = 207.7441u       
++ xint0.nopd = 207.7441u       
++ xint1.nind =-709.1878u       
++ xint1.nipd =-709.1878u       
++ xint1.nond = 207.7451u       
++ xint1.nopd = 207.7451u       
++ xint2.nind =-709.1877u       
++ xint2.nipd =-709.1877u       
++ xint2.nond = 207.7454u       
++ xint2.nopd = 207.7454u       
++ xint0.xdel.nina = 131.0952u       
++ xint0.xdel.ninao =  -1.3017n       
++ xint0.xdel.ninaos =  93.6758f       
++ xint0.xdel.ninas = 336.2313u       
++ xint0.xdel.nipa = 131.0952u       
++ xint0.xdel.nipao =  -1.3017n       
++ xint0.xdel.nipaos =  93.6758f       
++ xint0.xdel.nipas = 336.2313u       
++ xint1.xdel.nina = 131.0952u       
++ xint1.xdel.ninao =  -1.3017n       
++ xint1.xdel.ninaos =  93.6758f       
++ xint1.xdel.ninas = 336.2323u       
++ xint1.xdel.nipa = 131.0952u       
++ xint1.xdel.nipao =  -1.3017n       
++ xint1.xdel.nipaos =  93.6758f       
++ xint1.xdel.nipas = 336.2323u       
++ xint2.xdel.nina = 131.0952u       
++ xint2.xdel.ninao =  -1.3017n       
++ xint2.xdel.ninaos =  93.6758f       
++ xint2.xdel.ninas = 336.2325u       
++ xint2.xdel.nipa = 131.0952u       
++ xint2.xdel.nipao =  -1.3017n       
++ xint2.xdel.nipaos =  93.6758f       
++ xint2.xdel.nipas = 336.2325u       
+***   END: Saved Operating Point ***                     

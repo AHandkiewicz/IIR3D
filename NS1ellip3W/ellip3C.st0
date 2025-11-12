@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+Input File: ellip3C.sp
+lic:
+lic: FLEXlm: SDK_12.9.6
+lic: USER:   wa                   HOSTNAME: wa-Komputer
+lic: HOSTID: 080027e71bd6         PID:      2652
+lic: Using FLEXlm license file:
+lic: 27000@127.0.0.1
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@127.0.0.1
+lic:
+
+ init: begin read circuit files, cpu clock= 3.54E+00
+       option search = C:/synopsys/Hspice_S-2021.09/parts/behave/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/AD/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/XILINX/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/SIGNET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PCI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/DI0/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/COMLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BJT/
+       option list
+       option node
+       option post
+ init: end read circuit files, cpu clock= 1.07E+01 peak memory=      88 mb
+ init: begin check errors, cpu clock= 1.07E+01
+ init: end check errors, cpu clock= 1.10E+01 peak memory=     110 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.10E+01
+       establish matrix -- done, cpu clock= 1.10E+01 peak memory=     111 mb
+       re-order matrix -- done, cpu clock= 1.11E+01 peak memory=     111 mb
+ init: end setup matrix, cpu clock= 1.11E+01 peak memory=     111 mb
+ dcop: begin dcop, cpu clock= 1.11E+01
+ dcop: end dcop, cpu clock= 1.12E+01 peak memory=     112 mb tot_iter=       7
+ output: Z:\SIdesign\NS1ellip3W\ellip3C.tr0
+ sweep: tran tran0    begin, stop_t=  2.00E-07 #sweeps= 201 cpu clock= 1.12E+01
+ tran: time= 2.0645E-08 tot_iter=     210 conv_iter=      77 cpu clock= 1.42E+01
+ tran: time= 4.1400E-08 tot_iter=     338 conv_iter=     127 cpu clock= 1.60E+01
+ tran: time= 6.1000E-08 tot_iter=     433 conv_iter=     163 cpu clock= 1.74E+01
+ tran: time= 8.0600E-08 tot_iter=     535 conv_iter=     199 cpu clock= 1.87E+01
+ tran: time= 1.0020E-07 tot_iter=     633 conv_iter=     235 cpu clock= 2.00E+01
+ tran: time= 1.2011E-07 tot_iter=     738 conv_iter=     274 cpu clock= 2.16E+01
+ tran: time= 1.4021E-07 tot_iter=     842 conv_iter=     313 cpu clock= 2.31E+01
+ tran: time= 1.6045E-07 tot_iter=     940 conv_iter=     350 cpu clock= 2.45E+01
+ tran: time= 1.8104E-07 tot_iter=    1038 conv_iter=     387 cpu clock= 2.59E+01
+ tran: time= 2.0000E-07 tot_iter=    1159 conv_iter=     432 cpu clock= 2.76E+01
+ sweep: tran tran0    end, cpu clock= 2.76E+01 peak memory=     114 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

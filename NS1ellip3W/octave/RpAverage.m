@@ -1,0 +1,20 @@
+%N=16;
+RpA;
+N=96;
+for i=1:N rm(i)=R(i,4); rp(i)=R(i,5); end;
+for i=1:(N/3) hm(i)=(rm(3*(i-1)+1)+rm(3*(i-1)+2)+rm(3*(i-1)+3))/3; hp(i)=(rp(3*(i-1)+1)+rp(3*(i-1)+2)+rp(3*(i-1)+3))/3; end;
+h=(hp-hm)/6164; %a:9000, b:6700, c:6000
+figure 1;
+plot(h,'k');
+title('samples of SI filter response');
+xlabel('# sample');
+ylabel('sample value');
+grid on;
+figure 2;
+H=fft(h,128);
+HdB=20*log10(abs(H));
+plot(HdB,'k');
+title('SI filter characteristic');
+xlabel('frequency');
+ylabel('[dB]');
+grid on;

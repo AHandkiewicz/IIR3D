@@ -1,0 +1,13 @@
+Skrypt i plik *.lis muszą znajdować się w jednym katalogu.
+Wywołanie:
+./script.sh nazwa_pliku_wejsciowego.lis nazwa_pliku_wyjsciowego.m
+ 
+np.
+./script.sh ellip3C.lis Resp32p1T.m
+./script.sh ellip3C.lis R.m
+Gdyby nie zadziałało , to trzeba wykonać polecenie w katalogu ze skryptem:
+chmod +x script.sh
+ 
+Gdyby w pliku wynikowym było za dużo skopiowanych linii z pliku *.list, to trzeba edytować linię "sed -n $((x+1)),$((y-3))'p' $file > output" zmieniając wartości przy x i y.
+Zakładam, że może być taki problem, bo w pliku przesłanym przez Pana Profesora były wstawione chyba literki x i y.
+

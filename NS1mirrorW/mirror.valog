@@ -1,0 +1,492 @@
+*pvaI* ### ENV(PVA_EXPLODE_GMD) is 0 ###
+
+ ---------------------------------------------------------
+|                                                         |
+|             Synopsys Unified Verilog-A (pVA)            |
+|                                                         |
+|                Machine Name: wa-Komputer                |
+| Copyright (c) 2015 Synopsys Inc., All Rights Reserved.  |
+|                                                         |
+ ---------------------------------------------------------
+
+libepva built by pvamgr synmake_pva_build  on Mon Jul 26 15:45:43 CST 2021 - p4:
+HSP_HOME:   C:\synopsys\Hspice_S-2021.09
+HSP_ARCH is not set.
+HSP_GCC :   C:\synopsys\Hspice_S-2021.09\GNU\win64\bin\gcc
+HSP_GCC_VER:   5.2.0
+Working-Dir:     Z:\SIdesign\NS1mirrorW
+Args:            -p hsp -t spi -f Z:/SIdesign/NS1mirrorW/mirror.pvadir/pvaHDL.lis -o Z:/SIdesign/NS1mirrorW/mirror.pvadir 
+
+### optimize mode ###
+
+Begin of pVA compiling on Fri Jun 13 18:42:23 2025	
+
+Parsing 'source/bsimcmg.va'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/constants.vams'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/disciplines.vams'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/common_defs.include'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/bsimcmg_cfringe.include'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/bsimcmg_body.include'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/bsimcmg_binning_parameters.include'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/bsimcmg_rdsmod.include'
+Parsing include file 'Z:/SIdesign/NS1mirrorW//source/bsimcmg_quasi_static_cv.include'
+
+End of pVA compiling on Fri Jun 13 18:42:23 2025	
+
+
+End of build pVA DB on Fri Jun 13 18:42:32 2025	
+
+
+Z:\SIdesign\NS1mirrorW\mirror.pvadir\pvaRTL_win64.dll is reused
+
+*pvaI* Creating VA module (bsimcmg) for instance XDON.XMN1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/NS1mirrorW//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/NS1mirrorW//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri Jun 13 18:42:32 2025	
+
+*pvaW* (31) FPE: Encountered numerical NaN with node (di, si) (Z:/SIdesign/NS1mirrorW//source/bsimcmg_body.include:3729)
+*pvaW*           in N/A-instname(bsimcmg)
+*pvaW* (31)      For a complete list of FPE warnings, please setenv PVA_ENABLE_FPE3 2
+*pvaW* (31)      For debugging, please use $strobe to print the value of signal.
+
+*pvaI* Creating VA module (bsimcmg) for instance XDON.XMP1
+*pvaI* Module (bsimcmg): node 'N' shorted with port 'ground' (C:/NS1mirrorW//source/bsimcmg_body.include:3841)
+*pvaI* Module (bsimcmg): node 'ge' shorted with port 'g' (C:/NS1mirrorW//source/bsimcmg_body.include:3819)
+*pvaI*        2 nodes and 4 branches eliminated for module 'bsimcmg'
+*pvaI*   1 optional port(s) not connected
+*pvaI*        termCount=7 diwSize=164 probeSize=1883 Qsize=10 Isize=14
+End of GMD creation on Fri Jun 13 18:42:32 2025	
+
+End of pVA setup    on Fri Jun 13 18:42:32 2025	
+
+Begin of pVA simulation on Fri Jun 13 18:42:32 2025	
+
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+*pvaI* minimum timestep = 1e-19
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+VTH = -3.329969e-01
+VTH = 3.430073e-01
+
+End of pVA simulation reached at time 2e-08 on Fri Jun 13 18:42:32 2025	
+
+
+		pVA malloc          1.586 Mbytes        30398 times
+		pVA calloc         11.794 Mbytes       114606 times
+		pVA realloc        22.701 Mbytes         3555 times
+		pVA valloc          0.000 Mbytes            0 times
+		pVA alloca          0.000 Mbytes            0 times
+
+		pVA TOT-MEM        36.082 Mbytes       148559 times
+		pVA free                                24337 times
+		pVA strdup          0.000 Mbytes            0 times
+
+pVA concluded on Fri Jun 13 18:42:32 2025	
+

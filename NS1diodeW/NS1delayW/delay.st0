@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- S-2021.09 win64 (Aug 25 2021 7230000) ******
+Input File: delay.sp
+lic:
+lic: FLEXlm: SDK_12.9.6
+lic: USER:   wa                   HOSTNAME: wa-Komputer
+lic: HOSTID: 080027e71bd6         PID:      2584
+lic: Using FLEXlm license file:
+lic: 27000@127.0.0.1
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@127.0.0.1
+lic:
+
+ init: begin read circuit files, cpu clock= 1.31E-01
+       option search = C:/synopsys/Hspice_S-2021.09/parts/behave/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/AD/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/XILINX/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/TI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/SIGNET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PCI/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/PET/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/DI0/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/COMLINE/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_S-2021.09/parts/BJT/
+       option list
+       option node
+       option post
+ init: end read circuit files, cpu clock= 8.12E+00 peak memory=      82 mb
+ init: begin check errors, cpu clock= 8.12E+00
+ init: end check errors, cpu clock= 8.20E+00 peak memory=      84 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 8.20E+00
+       establish matrix -- done, cpu clock= 8.20E+00 peak memory=      84 mb
+       re-order matrix -- done, cpu clock= 8.20E+00 peak memory=      84 mb
+ init: end setup matrix, cpu clock= 8.21E+00 peak memory=      85 mb
+ dcop: begin dcop, cpu clock= 8.21E+00
+ dcop: end dcop, cpu clock= 8.24E+00 peak memory=      85 mb tot_iter=       7
+ output: Z:\SIdesign\NS1delayW\delay.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps= 201 cpu clock= 8.25E+00
+ tran: time= 1.0402E-09 tot_iter=     195 conv_iter=      65 cpu clock= 8.51E+00
+ tran: time= 2.0233E-09 tot_iter=     361 conv_iter=     123 cpu clock= 9.00E+00
+ tran: time= 3.0500E-09 tot_iter=     556 conv_iter=     192 cpu clock= 9.57E+00
+ tran: time= 4.0034E-09 tot_iter=     642 conv_iter=     225 cpu clock= 9.85E+00
+ tran: time= 5.0000E-09 tot_iter=     732 conv_iter=     260 cpu clock= 1.01E+01
+ tran: time= 6.0000E-09 tot_iter=     938 conv_iter=     326 cpu clock= 1.05E+01
+ tran: time= 7.0084E-09 tot_iter=    1121 conv_iter=     391 cpu clock= 1.08E+01
+ tran: time= 8.0273E-09 tot_iter=    1299 conv_iter=     455 cpu clock= 1.10E+01
+ tran: time= 9.0036E-09 tot_iter=    1387 conv_iter=     489 cpu clock= 1.12E+01
+ tran: time= 1.0000E-08 tot_iter=    1477 conv_iter=     524 cpu clock= 1.13E+01
+ sweep: tran tran0    end, cpu clock= 1.13E+01 peak memory=      85 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,19 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 win64"
+* "format" "HSP"
+* "rundate" "19:06:21 05/23/2025 "
+* "netlist" "diode.sp "
+* "runtitle" "*custom compiler version s-2021.09"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ ndd = 350.0000m       
++ nddb = 350.0000m       
++ ni =   0.            
++ nia =-501.0998u       
++ nib =-501.0998u       
++ nss =-350.0000m       
+***   END: Saved Operating Point ***                     

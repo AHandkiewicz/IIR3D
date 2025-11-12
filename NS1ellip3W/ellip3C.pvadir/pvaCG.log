@@ -1,0 +1,21 @@
+
+Begin of pVA compiling on Sun Sep 14 19:03:58 2025	
+
+Parsing 'source/bsimcmg.va'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/constants.vams'
+Parsing include file 'C:/synopsys/Hspice_S-2021.09/include/disciplines.vams'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/common_defs.include'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/bsimcmg_cfringe.include'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/bsimcmg_body.include'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/bsimcmg_binning_parameters.include'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/bsimcmg_rdsmod.include'
+Parsing include file 'Z:/SIdesign/NS1ellip3W//source/bsimcmg_quasi_static_cv.include'
+
+End of pVA compiling on Sun Sep 14 19:03:59 2025	
+
+
+End of build pVA DB on Sun Sep 14 19:04:05 2025	
+
+
+Z:\SIdesign\NS1ellip3W\ellip3C.pvadir\pvaRTL_win64.dll is reused
+

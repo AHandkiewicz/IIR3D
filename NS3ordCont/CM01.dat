@@ -1,0 +1,41 @@
+ CURRENT MIRROR - output data (Final parameters)
+----------------------------------------------------------
+----------------------------------------------------------
+
+Input data file: 
+	C:\Andrzej\teksty\DOKTOR\Radek\praca\SImaker\NS3ordCont\NS10.dat
+Time-Date: 18:44:09 22.07.2025
+
+Settings:
+	Grid = 1 [um]
+	Interpolation: Piecewise Cubic Hermite
+	Input Current (Jin): not set
+	Output Current (Jout):
+		S = 1.0970 ± 1.00%	|  not set
+		S = 0.9605 ± 1.00%	|  not set
+		S = 0.3870 ± 1.00%	|  not set
+	Optimization:
+		- first level: Smallest Currents
+		- second level: Speed Optimization (decrease order: first max Speed)
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+CURRENT MIRROR - Final Parameters: 
+
+Transistors channel dimensions [um]:
+	 pMOS: length = l, width = w 
+	 nMOS: length = l, width = 1 [um]
+
+Input Current (Jin): 7.9727 [uA]
+
+set S ± ... %	| S		| lin[um]	| lout[um]	| win[um]		| wout[um]		| Output Current (Jout)[uA]
+---------------------------------------------------------------------------------------------------------------------
+
+1.0970 ± 1.00%	| 1.1064	| 29.0000	| 23.0000	| 39 (38.7421)	| 31 (30.9328)	| 9.1834
+0.9605 ± 1.00%	| 0.9685	| 29.0000	| 29.0000	| 39 (38.7421)	| 39 (38.7421)	| 7.9727
+0.3870 ± 1.00%	| 0.3888	| 29.0000	| 100.0000	| 39 (38.7421)	| 126 (126.0000)	| 3
+
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+
